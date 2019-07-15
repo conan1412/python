@@ -1,0 +1,12 @@
+.openerp .oe_avatar_ga > img {
+  max-height: 120px;
+  max-width: 120px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  border: none;
+  margin-bottom: 10px;
+}

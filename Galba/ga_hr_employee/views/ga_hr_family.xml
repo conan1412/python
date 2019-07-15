@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <openerp>
+        <data>
+           	<!--Family view form -->
+        	<record id="ga_hr_family_wiew_form" model="ir.ui.view">
+	            <field name="name">ga.hr.family.view.form</field>
+	            <field name="model">ga.hr.family</field>           
+	            <field name="arch" type="xml">
+	            	<form>	                      
+	                	<sheet>	 
+	                     	<div>
+	                      		<group>
+	                      		 	<group string="General Information">
+	                           			<field name="parentage" required="1"/>
+				                        <field name="identification_number" required="0" placeholder="Ej. 12345678"/>
+				                        <field name="family_name" required="1"/> 
+				                        <field name="second_name" required="0"/> 
+				                        <field name="last_name_family" required="1"/> 
+				                        <field name="second_last_name_family" required="0"/> 
+				                        <field name="country_id" options='{"no_open": True, "no_create": True}' required="0"/>
+				                        <field name="birthday_family" required="1"/>
+				                        <field name="age" required="0"/>
+				                        <field name="gender_family" required="0"/>
+			                        </group>
+			                        <group>
+			                        	<field name="phone" required="0"/>
+			                           	<field name="emergency_call" required="0"/>
+			                           	<field name="impairment" required="0"/>
+			                           	<field name="impairment_type" attrs="{'invisible': [('impairment', '=', False)]}" required="0"/>	
+									    <group string="Contributions and benefits">
+					                        <field name="benefit_creche_family" required="0"/> 
+					                        <field name="hcm_family" required="0"/>
+					                        <field name="scholarship_family" required="0"/> 
+					                        <field name="school_tools_family" required="0"/>
+					                        <field name="disability_family" required="0"/> 
+					                    </group>
+	                     	
+					                </group>                 
+				                </group>           
+	                        </div>
+	                    </sheet>
+	                </form>
+	            </field>
+        	</record> 
+        	<!--Family view tree-->
+            <record id="ga_hr_family_view_tree" model="ir.ui.view">
+	            <field name="name">ga.hr.family.view.tree</field>
+	            <field name="model">ga.hr.family</field>                
+	            <field name="arch" type="xml">
+	                <tree string="Employee courses">
+	                	<field name="parentage" required="1"/>
+	                	<field name="identification_number" required="0"/>
+	                	<field name="family_name" required="1"/>
+	                	<field name="last_name_family" required="1"/> 
+	                	<field name="birthday_family" required="1"/> 
+	                	<field name="age" required="0"/>
+	                	<field name="phone" required="0"/>
+	                </tree>
+	            </field>
+            </record>       
+        </data>
+    </openerp>
+        
+        
+        
+        
+        
+        

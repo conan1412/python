@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_ga_ac_general_wizard" model="ir.ui.view">
+            <field name="name">Attendance General Report</field>
+            <field name="model">ga.ac.general.attendance</field>
+            <field name="arch" type="xml">
+            <form string="Print Attendances Report">
+                <group string="Analysis Information" col="4">
+                    <field name="init_date"/>
+                    <field name="end_date"/>
+                </group>
+                <footer>
+                    <button name="print_reports" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+            </field>
+        </record>
+
+        <record id="action_ga_attendance_report" model="ir.actions.act_window">
+            <field name="name">Attendance General Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ga.ac.general.attendance</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_ga_ac_general_wizard"/>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_access_control_general_report"
+                      parent="menu_access_control_two"
+                      name="General report in pdf"
+                      action="action_ga_attendance_report"
+                      sequence="6" />
+
+    </data>
+</openerp>

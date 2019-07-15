@@ -1,0 +1,41 @@
+valores a ingresar en avanced install package en el sublime los paquetes instalados son los siguientes
+###### Basico desarrollo web ##################
+1337 Color scheme
+a file icon
+AdvancedNewFile
+Alignment
+all Autocomplete
+autofilename
+ayu
+bootstrap 3 jade snippets
+bootstrap 3 snippets
+color highlighter
+color picker
+comment snippets
+emmet
+emmet css snippets
+emmet style reflector
+emmetOneLine
+html Nest comments
+javascript completions
+YUI Compressor
+jQuery
+Bootstrap 4 Snippets
+########## PARA LARAVEL #################
+Blade snippets
+Laravel blade highlighter
+laravel blade spacer
+PHP Companion
+phpcs
+Sublimelinter-php
+Laravel 5 Snippets
+######## ODOO ##########################
+indent XMl
+odoo snippets
+############### PYTHON #######################
+Python 3
+PyV8
+djaneiro
+####### VUE JS ###########################
+Vuejs snippets
+Vuetify

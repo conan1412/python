@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <openerp>
+        <data>
+        	<!--Kanban view of employee-->
+        	<record id="ga_hr_employee_view_kanban" model="ir.ui.view">
+	            <field name='name'>hr.employee.view.kanban</field>
+            	<field name='model'>hr.employee</field>
+            	<field name='inherit_id' ref='hr.hr_kanban_view_employees'/>
+            	<field name='arch' type='xml'>
+            		<field name="job_id" position="before">
+            			<li><field name="identification_id"/></li>
+            		</field>
+            		<field name="work_location" position="before">
+            			<li><field name="department_id"/></li>
+            		</field>
+            		<field name="work_location" position="after">
+            			<li><field name="mobile_phone"/></li>
+            		</field>
+            		<field name="work_location" position="replace">
+            			<li><field name="work_location" invisible="1"/></li>
+            		</field>
+                </field>
+        	</record>
+
+           	<!--Tree view of employee-->
+			<record id="hr_employee_view_tree" model="ir.ui.view">
+	            <field name='name'>hr.employee.view.tree</field>
+            	<field name='model'>hr.employee</field>
+            	<field name='inherit_id' ref='hr.view_employee_tree'/>
+            	<field name='arch' type='xml'>
+            		<field name="name"  position="before">
+                    		<field name="identification_id"/>
+        			</field>
+            		<field name="name"  position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+            		<field name="job_id" position="replace">
+            			<field name="job_id" string="Professional position"/>
+            		</field>
+            		<field name="job_id"  position="after">
+                    		<field name="mobile_phone" string="Mobile"/>
+                    		<field name="active"/>
+        			</field>
+                    <field name="work_email"  position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+        			<field name="work_phone"  position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+                </field>
+        	</record>
+
+           	<!--Form view of employee-->
+        	<record id="hr_employee_view_form" model="ir.ui.view">
+	            <field name='name'>hr.employee.view.form</field>
+            	<field name='model'>hr.employee</field>
+            	<field name='inherit_id' ref='hr.view_employee_form'/>
+            	<field name='arch' type='xml'>
+            	<!-- 	Principal information -->
+            		<field name="identification_id" position="replace">
+        			</field>
+            		<label for="name" position="before">
+	                	    <label for="identification_id" string="Identification number of employee"/>
+            				<field name="identification_id" nolabel="1" required="1" placeholder="Ej. 12345678"/>
+					</label>
+            		<field name="work_email" position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+					<field name="work_phone" position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+
+					<!-- Page of public information -->
+					<!-- -Fields of left position -->
+					<field name="address_id" position="replace">
+						  <field name="address_id" required="1" domain="[('is_company', '=', True)]"/>
+					</field>
+					<field name="work_location" position="replace">
+                    </field>
+        			<field name="address_id" position="after">
+					     <field name="work_location" string="Business address" required="0" />
+					     <field name="work_phone" required="0"/>
+					     <field name="extension" required="0"/>
+					     <field name="work_email" string="Work email" required="0"/>
+					</field>
+					<xpath expr="//group[@string='Position']" position="after">
+        				<group string="Aditional information">
+        					 <field name="years_service" required="1"/>
+							 <field name="seconded_labor_union" required="0"/>
+							 <field name="name_labor_union" attrs="{'invisible': [('seconded_labor_union', '=', False)]}" required="0"/>
+        				</group>
+               		</xpath>
+					<!-- Invisible fields of left position -->
+					<field name="mobile_phone" position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+					<field name="gender" position="replace">
+        			</field>
+        			<field name="marital" position="replace">
+                    </field>
+        			<field name="user_id" position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+
+        			<!-- Fields of right position -->
+					<field name="department_id" position="attributes">
+            <attribute name="required">1</attribute>
+					</field>
+					<field name="coach_id" position="replace">
+					</field>
+					<field name="job_id" position="replace">
+					</field>
+					<field name="department_id" position="after">
+						  <field name="job_id" string="Professional position" required="1"/>
+                          <field name="employee_type_id" required="1"/>
+						  <field name="coach_id" string="Direct supervisor" required="0"/>
+						  <field name="assigned_to" required="0"/>
+					      <field name="assigned_from" required="0"/>
+					</field>
+					<!-- Invisible fields of right position -->
+					<field name="parent_id" position="attributes">
+                    	<attribute name="invisible">1</attribute>
+        			</field>
+
+					<!-- Page of personal information -->
+					<!-- Groups of personal information -->
+					<xpath expr="//group[@string='Citizenship &amp; Other Info']" position="attributes">
+	        			<attribute name='string'>Citizenship and contact information</attribute>
+	        		</xpath>
+	               	<xpath expr="//group[@string='Citizenship and contact information']" position="after">
+	               		<group string="Aditional Information">
+	               		    <field name="bank_account_id" string="Bank account" required="0"/>
+	               			<field name="gender" string="Gender" required="0"/>
+							<field name="marital" required="0"/>
+							<field name="laterality_type" required="0"/>
+	               			<field name="have_vehicle" required="0"/>
+	               			<field name="impairment" required="0" />
+						  	<field name="impairment_type" attrs="{'invisible': [('impairment', '=', False)]}" required="0" />
+						 	<group string="Dress size" col="4" colspan="2">
+					 			<field name="shirt_size" required="0"/>
+						 		<field name="pants_size" required="0"/>
+					 			<field name="braga_size" required="0"/>
+						  		<field name="boots_size" required="0"/>
+						  	</group>
+
+	               		</group>ls
+	               	</xpath>
+	               	<xpath expr="//page[@string='Personal Information']/group/group[@string='Contact Information']" position="attributes">
+	        			<attribute name='invisible'>1</attribute>
+	               	</xpath>
+	               	<xpath expr="//group[@string='Status']" position="attributes">
+	        			<attribute name='invisible'>1</attribute>
+	               	</xpath>
+	               	<xpath expr="//group[@string='Birth']" position="replace">
+
+	               	</xpath>
+	               	<!-- Fields of personal information -->
+	               	<field name="bank_account_id" position="replace">
+	               	</field>
+	               	<field name="country_id" position="attributes">
+                    	<attribute name="string">Country of birth</attribute>
+                    </field>
+        			<field name="country_id" position="after">
+                        <field name="birthday" required="0"/>
+        			</field>
+        			<field name="otherid" position="after">
+                    	<field name="address_home_id" required="0" domain="[('user_id', '=', uid)]"/>
+        				<field name="mobile_phone" string="Mobile phone" required="0"/>
+        				<field name="email" required="0"/>
+        			</field>
+
+					<!-- Page of professional information, work experience and family information-->
+					<xpath expr="//label[@for='work_phone']" position="replace">
+               		</xpath>
+               		<xpath expr="//label[@for='work_email']" position="replace">
+               		</xpath>
+                    <xpath expr="//page[@string='Personal Information']" position="after">
+ 	                	<page string='Professional information'>
+ 	                    	<label for="academic_formation_ids" string="Academic formation"/>
+	    					<field name="academic_formation_ids" required="0"/>
+	    					<label for="courses_ids" string="Courses and workshop"/>
+	    					<field name="courses_ids" required="0"/>
+	    					<field name="description_activities" placeholder="Skills and abilities..." required="0" />
+	     				</page>
+                        <page string='Work experience'>
+                            <field name="work_experience_ids" required="0"/>
+                            <group>
+                                <field name="external_years_experience" required="0" />
+                            </group>
+                        </page>
+	    				<page string='Family information'>
+	    					<label for="family_ids" string="Families"/>
+	    					<field name="family_ids" required="0"/>
+	    				</page>
+	    			</xpath>
+
+                    <!-- Page of RRHH configuration-->
+                    <xpath expr="//page[@string='HR Settings']/
+                                    group/
+                                    group[@name='active_group']"
+                                    position="attributes">
+                        <attribute name="string">Status</attribute>
+                    </xpath>
+                    <xpath expr="//page[@string='HR Settings']/
+                                    group/
+                                    group[@name='active_group']" >
+                        <field name="user_id" required="0" help="You must create the user used by the employee to enter the system."/>
+                        <field name="cost_center" required="0"/>
+                    </xpath>
+                     <xpath expr="//page[@string='HR Settings']/
+                                    group/
+                                    group[@name='active_group']"
+                                    position="after">
+                        <group string="Contributions and benefits">
+                            <field name="hcm" required="0"/>
+                            <field name="scholarship" required="0"/>
+                            <field name="school_tools" required="0"/>
+                            <field name="assignment_disability" required="0"/>
+                            <field name="economic_support" required="0"/>
+                        </group>
+                    </xpath>
+                    <xpath expr="//page[@string='HR Settings']">
+                        <group>
+                            <group string="Voluntary deductions">
+                                <field name="saving_box" required="0"/>
+                                <field name="credit" required="0"/>
+                                <field name="loan" required="0"/>
+                                <field name="income_tax" required="0"/>
+                                <field name="syndicate" required="0"/>
+                            </group>
+                            <group string="Obligatory deductions">
+                                <field name="maintenance" required="0"/>
+                                <field name="amount_type"  attrs="{'invisible': [('maintenance', '=', False)]}" required="0"/>
+                                <field name="amount" attrs="{'invisible': [('maintenance', '=', False)]}" required="0"/>
+                            </group>
+                        </group>
+                    </xpath>
+                    <xpath expr="//page[@string='HR Settings']" position="attributes">
+                        <attribute name='string'>HR</attribute>
+                    </xpath>
+	            </field>
+        	</record>
+	 	</data>
+    </openerp>

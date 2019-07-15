@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<openerp>
+		<data>
+			<!--Action for menu-->
+			<act_window id="action_form_vehicles"
+						name="Vehicle" 
+						res_model="ga.ac.vehicle" 
+						view_mode="tree,form" />
+			
+			<!--List for register access of employees-->
+			<record id="view_tree_ga_ac_vehicles" model="ir.ui.view">
+				<field name="name">ga.ac.vehicles Tree</field>
+				<field name="model">ga.ac.vehicle</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="license_plate"/>
+						<field name="visitant_id"/>
+						<field name="employee_id"/>
+						<field name="type_model_id"/>
+						<field name="color"/>
+					</tree>
+				</field>
+			</record>
+
+			<record id="view_form_ga_ac_vehicles" model="ir.ui.view">
+				<field name="name">ga.ac.vehicles form</field>
+				<field name="model">ga.ac.vehicle</field>
+				<field name="arch" type="xml">
+					<form>
+						<header>
+						</header>
+						<sheet> 
+							<group name="group_top">
+								<group name="group_left">
+									<field name="license_plate"/>
+									<field name="type_model_id" />
+								</group>
+								<group name="group_right">
+									<field name="employee_id"/>
+									<field name="visitant_id"/>
+									<field name="color"/>
+								</group>
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+
+			<!--Menu inferior-->
+			<menuitem id="menu_ga_ac_vehicle" 
+					  parent="menu_access_control_two" 
+					  name="Vehicles" 
+					  action="action_form_vehicles" 
+					  sequence="5" />
+
+		</data>
+	</openerp>

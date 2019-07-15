@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <openerp>
+        <data>
+           	<!--Work experience view form -->
+        	<record id="ga_hr_work_experience_view_form" model="ir.ui.view">
+	            <field name="name">ga.hr.work.experience.view.form</field>
+	            <field name="model">ga.hr.work.experience</field>           
+	            <field name="arch" type="xml">
+	            	<form>	                      
+	                	<sheet>
+	                		<group>	
+	                			<field name="name_business" required="1"/>
+	                			<field name="charge" required="1"/>
+				                <field name="contact_name" required="0"/>
+				                <field name="phone_contact" required="0"/>
+				                <field name="salary_received" required="0"/>
+				                <field name="admission_date" required="0"/>
+				                <field name="egress_date" required="0"/>
+				                <field name="years" required="0"/>
+				            </group>			
+	                    </sheet>
+	                </form>
+	            </field>
+        	</record>
+        	
+        	<!--Work experience view tree-->
+            <record id="ga_hr_work_experience_view_tree" model="ir.ui.view">
+	            <field name="name">ga.hr.work.experience.view.tree</field>
+	            <field name="model">ga.hr.work.experience</field>                
+	            <field name="arch" type="xml">
+	                <tree>
+            			<field name="name_business" required="1"/>
+            			<field name="charge" required="1"/>
+            			<field name="years" required="0"/>
+		                <field name="contact_name" required="0"/>
+		                <field name="phone_contact" required="0"/>
+            		</tree>
+	            </field>
+            </record>         
+        </data>
+    </openerp>
+        
+        
+        
+        
+        
+        

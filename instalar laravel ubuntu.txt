@@ -1,0 +1,7 @@
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt-get install apache2 curl php7.2 php7.2-cli php7.2-curl php7.2-mysql php7.2-pgsql php7.2-zip php7.2-mbstring php7.2-imap php7.2-xml php7.2-gd php7.2-xsl php7.2-intl dompdf
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash - sudo apt-get install -y nodejs
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+composer global require "laravel/installer"
+

@@ -1,0 +1,915 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ga_access_control
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-31 20:00+0000\n"
+"PO-Revision-Date: 2017-07-31 20:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.ac_layout_footer
+msgid "(*)This information is the property of"
+msgstr "(*)Esta información es propiedad de"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.ac_layout_footer
+msgid ", its distribution to agents outside the company is prohibited."
+msgstr ", su distribución fuera de la empresa esta prohibida."
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+#: model:ir.actions.act_window,name:ga_access_control.action_form_principal
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_inicio
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_one
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_two
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_configuration
+msgid "Access Control"
+msgstr "Control de Acceso"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_tree_visitant
+msgid "Access of Employees on Instalations"
+msgstr "Acceso de trabajadores a la empresa"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_tree_visitant
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_tree_employee
+msgid "Access of Visitants on Instalations"
+msgstr "Acceso de visitantes a la empresa"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_tree_employee
+msgid "Access to Instalatations"
+msgstr "Acceso de trabajadores a la empresa"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/model/ga_ac_irregularity_entry.py:27
+#: code:addons/ga_access_control/model/ga_ac_irregularity_output.py:27
+#: code:addons/ga_access_control/model/ga_ac_observations_entry.py:28
+#: code:addons/ga_access_control/model/ga_ac_observations_output.py:28
+#: code:addons/ga_access_control/model/ga_ac_vehicle.py:36
+#: code:addons/ga_access_control/model/ga_ac_vehicle.py:38
+#: code:addons/ga_access_control/model/ga_ac_vehicle.py:52
+#: code:addons/ga_access_control/model/ga_access_control.py:215
+#, python-format
+msgid "Alert!!!"
+msgstr "¡Alerta!"
+
+#. module: ga_access_control
+#: view:ga.ac.general.attendance:ga_access_control.view_ga_ac_general_wizard
+#: view:ga.ac.visitant.attendance:ga_access_control.view_ga_attendance_visitant
+msgid "Analysis Information"
+msgstr "Información"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Area"
+msgstr "Área"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Area:"
+msgstr "Área:"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/model/ga_access_control.py:181
+#: code:addons/ga_access_control/model/ga_access_control.py:234
+#: model:ir.model,name:ga_access_control.model_hr_attendance
+#, python-format
+msgid "Attendance"
+msgstr "Asistencia"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_ga_attendance_report
+#: model:ir.actions.report.xml,name:ga_access_control.action_report_attendance_general
+msgid "Attendance General Report"
+msgstr "Reporte general de asistencia"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_ga_attendance_visitant
+#: model:ir.actions.report.xml,name:ga_access_control.action_report_attendance_visitant
+msgid "Attendance Visitant Report"
+msgstr "Reporte de asistencia del visitante"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Authorize"
+msgstr "Autoriza"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.hr_kanban_view_employee
+#: view:hr.attendance:ga_access_control.hr_kanban_view_visitant
+msgid "Authorize:"
+msgstr "Autoriza:"
+
+#. module: ga_access_control
+#: field:hr.attendance,authorizes:0
+msgid "Authorizes"
+msgstr "Autoriza"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Average"
+msgstr "Promedio"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "C.I"
+msgstr "C.I"
+
+#. module: ga_access_control
+#: view:ga.ac.general.attendance:ga_access_control.view_ga_ac_general_wizard
+#: view:ga.ac.visitant.attendance:ga_access_control.view_ga_attendance_visitant
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_graph_hr_attendance_employee
+msgid "Chart of Attendance Trending"
+msgstr "Chart of Attendance Trending"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_chart
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_graph
+msgid "Chart trending"
+msgstr "Chart trending"
+
+#. module: ga_access_control
+#: field:ga.ac.vehicle,color:0
+msgid "Color"
+msgstr "Color"
+
+#. module: ga_access_control
+#: help:ga.ac.vehicle,color:0
+msgid "Color."
+msgstr "Color."
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+msgid "Country"
+msgstr "Country"
+
+#. module: ga_access_control
+#: field:ga.ac.visitant,country_id:0
+msgid "Country id"
+msgstr "País"
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,create_uid:0
+#: field:ga.ac.irregularity.entry,create_uid:0
+#: field:ga.ac.irregularity.output,create_uid:0
+#: field:ga.ac.mark,create_uid:0
+#: field:ga.ac.observations.entry,create_uid:0
+#: field:ga.ac.observations.output,create_uid:0
+#: field:ga.ac.service.post,create_uid:0
+#: field:ga.ac.type.model,create_uid:0
+#: field:ga.ac.vehicle,create_uid:0
+#: field:ga.ac.visitant,create_uid:0
+#: field:ga.ac.visitant.attendance,create_uid:0
+#: field:ga.ac.visitant.type,create_uid:0
+#: field:ga.access.control,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,create_date:0
+#: field:ga.ac.irregularity.entry,create_date:0
+#: field:ga.ac.irregularity.output,create_date:0
+#: field:ga.ac.mark,create_date:0
+#: field:ga.ac.observations.entry,create_date:0
+#: field:ga.ac.observations.output,create_date:0
+#: field:ga.ac.service.post,create_date:0
+#: field:ga.ac.type.model,create_date:0
+#: field:ga.ac.vehicle,create_date:0
+#: field:ga.ac.visitant,create_date:0
+#: field:ga.ac.visitant.attendance,create_date:0
+#: field:ga.ac.visitant.type,create_date:0
+#: field:ga.access.control,create_date:0
+msgid "Created on"
+msgstr "Creado"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Date Out"
+msgstr "Fecha de salida"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Date Sign"
+msgstr "Fecha de entrada"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+#: field:hr.attendance,date_in:0
+msgid "Date in"
+msgstr "Fecha de entrada"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.hr_kanban_view_employee
+#: view:hr.attendance:ga_access_control.hr_kanban_view_visitant
+msgid "Date in:"
+msgstr "Fecha de entrada:"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+#: field:hr.attendance,date_out:0
+msgid "Date out"
+msgstr "Fecha de salida"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.hr_kanban_view_employee
+#: view:hr.attendance:ga_access_control.hr_kanban_view_visitant
+msgid "Date out:"
+msgstr "Fecha de salida:"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Delay"
+msgstr "Retraso"
+
+#. module: ga_access_control
+#. openerp-web
+#: code:addons/ga_access_control/static/src/js/ga_ac.js:119
+#, python-format
+msgid "Delete"
+msgstr "Eliminar"
+
+#. module: ga_access_control
+#: field:hr.attendance,department_id:0
+msgid "Department"
+msgstr "Departamento"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.hr_kanban_view_employee
+#: view:hr.attendance:ga_access_control.hr_kanban_view_visitant
+msgid "Department:"
+msgstr "Departamento:"
+
+#. module: ga_access_control
+#. openerp-web
+#: code:addons/ga_access_control/static/src/js/ga_ac.js:114
+#, python-format
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+msgid "Ej. 12345678"
+msgstr "Ej. 12345678"
+
+#. module: ga_access_control
+#. openerp-web
+#: code:addons/ga_access_control/static/src/js/ga_ac.js:110
+#, python-format
+msgid "Embed"
+msgstr "Incrustar"
+
+#. module: ga_access_control
+#: field:ga.ac.vehicle,employee_id:0
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+#: model:ir.model,name:ga_access_control.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.hr_kanban_view_employee
+msgid "Employee:"
+msgstr "Empleado:"
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,end_date:0
+#: field:ga.ac.visitant.attendance,end_date:0
+msgid "Ending Date"
+msgstr "Fecha final"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+#: help:ga.access.control,identification_id:0
+msgid "Enter Employee Identification"
+msgstr "Ingrese identificación"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+msgid "Entrances"
+msgstr "Entradas"
+
+#. module: ga_access_control
+#: constraint:hr.attendance:0
+msgid "Error ! Sign in (resp. Sign out) must follow Sign out (resp. Sign in)"
+msgstr "¡Error! Una entrada debe seguir a un registro de salida."
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+msgid "Exits"
+msgstr "Salidas"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Extension:"
+msgstr "Extension:"
+
+#. module: ga_access_control
+#. openerp-web
+#: code:addons/ga_access_control/static/src/js/ga_ac.js:12
+#: code:addons/ga_access_control/static/src/js/ga_ac.js:33
+#, python-format
+msgid "Form"
+msgstr "Formulario"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_access_control_general_report
+msgid "General report in pdf"
+msgstr "Generar reporte general"
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,id:0
+#: field:ga.ac.irregularity.entry,id:0
+#: field:ga.ac.irregularity.output,id:0
+#: field:ga.ac.mark,id:0
+#: field:ga.ac.observations.entry,id:0
+#: field:ga.ac.observations.output,id:0
+#: field:ga.ac.service.post,id:0
+#: field:ga.ac.type.model,id:0
+#: field:ga.ac.vehicle,id:0
+#: field:ga.ac.visitant,id:0
+#: field:ga.ac.visitant.attendance,id:0
+#: field:ga.ac.visitant.type,id:0
+#: field:ga.access.control,id:0
+#: field:report.ga_access_control.report_attendance_general,id:0
+#: field:report.ga_access_control.report_attendance_visitant,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+msgid "Identification"
+msgstr "Identificador"
+
+#. module: ga_access_control
+#: field:ga.ac.visitant,identification_number:0
+msgid "Identification Id"
+msgstr "Cédula"
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+msgid "Identification N°"
+msgstr "Identification N°"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+#: field:ga.access.control,identification_id:0
+msgid "Identification card"
+msgstr "Cédula"
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.ga_kanban_view_visitant
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+#: view:hr.attendance:ga_access_control.hr_kanban_view_employee
+#: view:hr.attendance:ga_access_control.hr_kanban_view_visitant
+msgid "Identification:"
+msgstr "Identificador:"
+
+#. module: ga_access_control
+#: field:ga.ac.visitant,image_medium:0
+msgid "Image"
+msgstr "Imagen"
+
+#. module: ga_access_control
+#: field:hr.attendance,irregularity_entry_id:0
+msgid "Irregularity Entry"
+msgstr "Irregularidad de entrada"
+
+#. module: ga_access_control
+#: field:hr.attendance,irregularity_output_id:0
+msgid "Irregularity Exit"
+msgstr "Irregularida de salida"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_irregularity_entry
+msgid "Irregularity Of Entrance"
+msgstr "Irregularidad de entrada"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_irregularity_output
+msgid "Irregularity Of Exit"
+msgstr "Irregularidad de Salida"
+
+#. module: ga_access_control
+#: field:ga.ac.irregularity.entry,name_irregularity_e:0
+msgid "Irregularity entrance"
+msgstr "Irregularidad de entrada"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Irregularity entry"
+msgstr "Irregularidad de entrada"
+
+#. module: ga_access_control
+#: field:ga.ac.irregularity.output,name_irregularity_o:0
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Irregularity exit"
+msgstr "Irregularidad de salida"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_irregularity_entry
+msgid "Irregularity of entrance"
+msgstr "Irregularidad de entrada"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_irregularity_output
+msgid "Irregularity of exit"
+msgstr "Irregularidad de salida"
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,write_uid:0
+#: field:ga.ac.irregularity.entry,write_uid:0
+#: field:ga.ac.irregularity.output,write_uid:0
+#: field:ga.ac.mark,write_uid:0
+#: field:ga.ac.observations.entry,write_uid:0
+#: field:ga.ac.observations.output,write_uid:0
+#: field:ga.ac.service.post,write_uid:0
+#: field:ga.ac.type.model,write_uid:0
+#: field:ga.ac.vehicle,write_uid:0
+#: field:ga.ac.visitant,write_uid:0
+#: field:ga.ac.visitant.attendance,write_uid:0
+#: field:ga.ac.visitant.type,write_uid:0
+#: field:ga.access.control,write_uid:0
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,write_date:0
+#: field:ga.ac.irregularity.entry,write_date:0
+#: field:ga.ac.irregularity.output,write_date:0
+#: field:ga.ac.mark,write_date:0
+#: field:ga.ac.observations.entry,write_date:0
+#: field:ga.ac.observations.output,write_date:0
+#: field:ga.ac.service.post,write_date:0
+#: field:ga.ac.type.model,write_date:0
+#: field:ga.ac.vehicle,write_date:0
+#: field:ga.ac.visitant,write_date:0
+#: field:ga.ac.visitant.attendance,write_date:0
+#: field:ga.ac.visitant.type,write_date:0
+#: field:ga.access.control,write_date:0
+msgid "Last Updated on"
+msgstr "Actualizado"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Lastest entrance"
+msgstr "Última Entrada"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Lastest exit"
+msgstr "Última salida"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Lastest records"
+msgstr "Últimos registros"
+
+#. module: ga_access_control
+#: field:ga.ac.vehicle,license_plate:0
+msgid "License"
+msgstr "Placa del vehiculo"
+
+#. module: ga_access_control
+#: help:ga.ac.vehicle,license_plate:0
+msgid "License."
+msgstr "Placa del vehiculo:"
+
+#. module: ga_access_control
+#: field:ga.ac.mark,mark:0
+#: model:ir.model,name:ga_access_control.model_ga_ac_mark
+msgid "Mark"
+msgstr "Marca"
+
+#. module: ga_access_control
+#: help:ga.ac.mark,mark:0
+msgid "Mark."
+msgstr "Marca."
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+msgid "Mobile"
+msgstr "Mobile"
+
+#. module: ga_access_control
+#: field:ga.ac.type.model,model:0
+#: field:ga.ac.vehicle,type_model_id:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: ga_access_control
+#: help:ga.ac.type.model,model:0
+msgid "Model."
+msgstr "Modelo."
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_filter_ga_visitant
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+#: field:ga.ac.visitant,name_visitant:0
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+msgid "Name visitant"
+msgstr "Nombre de visitante"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Name:"
+msgstr "Nombre:"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/wizard/ga_ac_general_wizard.py:27
+#: code:addons/ga_access_control/wizard/ga_ac_visitant_wizard.py:26
+#, python-format
+msgid "No Data Available!"
+msgstr "Sin datos disponibles!"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/wizard/ga_ac_general_wizard.py:27
+#: code:addons/ga_access_control/wizard/ga_ac_visitant_wizard.py:26
+#, python-format
+msgid "No records are found for your selection!"
+msgstr "Sin registros para su selección!"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "N°"
+msgstr "N°"
+
+#. module: ga_access_control
+#: field:hr.attendance,observations_entry_id:0
+msgid "Observations Entry"
+msgstr "Observaciones de entrada"
+
+#. module: ga_access_control
+#: field:hr.attendance,observations_output_id:0
+msgid "Observations Exit"
+msgstr "Observaciones de salida"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_observations_entry
+msgid "Observations Of Entrance"
+msgstr "Observaciones de entrada"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_observations_output
+msgid "Observations Of Exit"
+msgstr "Observaciones de salida"
+
+#. module: ga_access_control
+#: field:ga.ac.observations.entry,name_observations_e:0
+msgid "Observations entrance"
+msgstr "Observaciones de entrada"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Observations entry"
+msgstr "Observaciones de entrada"
+
+#. module: ga_access_control
+#: field:ga.ac.observations.output,name_observations_o:0
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Observations exit"
+msgstr "Observaciones de salida"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_observations_entry
+msgid "Observations of entrance"
+msgstr "Observaciones de entrada"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_observations_output
+msgid "Observations of exit"
+msgstr "Observaciones de salida"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+#: view:website:ga_access_control.report_attendance_visitant
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Operation"
+msgstr "Operación"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.ac_layout_footer
+msgid "Page:"
+msgstr "Página:"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "People currently inside facility"
+msgstr "Personas dentro de la empresa"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Position:"
+msgstr "Cargo:"
+
+#. module: ga_access_control
+#: view:ga.ac.general.attendance:ga_access_control.view_ga_ac_general_wizard
+#: view:ga.ac.visitant.attendance:ga_access_control.view_ga_attendance_visitant
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_general_attendance
+msgid "Print Attendance General Report"
+msgstr "Imprimir reporte general de asistencia"
+
+#. module: ga_access_control
+#: view:ga.ac.visitant.attendance:ga_access_control.view_ga_attendance_visitant
+#: model:ir.model,name:ga_access_control.model_ga_ac_visitant_attendance
+msgid "Print Attendance Visitant Report"
+msgstr "Imprimir reporte de visitante"
+
+#. module: ga_access_control
+#: view:ga.ac.general.attendance:ga_access_control.view_ga_ac_general_wizard
+msgid "Print Attendances Report"
+msgstr "Imprimir reporte de empleado"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Search"
+msgstr "Buscar"
+
+#. module: ga_access_control
+#: view:ga.access.control:ga_access_control.ga_view_form_hr_accesscontrol
+msgid "Search Identification for employee"
+msgstr "Buscar cedula del empleado"
+
+#. module: ga_access_control
+#: field:ga.ac.service.post,post_service:0
+msgid "Service"
+msgstr "Servicion postal"
+
+#. module: ga_access_control
+#: field:hr.attendance,post_service_id:0
+#: model:ir.model,name:ga_access_control.model_ga_ac_service_post
+msgid "Service post"
+msgstr "Servicio postal"
+
+#. module: ga_access_control
+#: help:ga.ac.service.post,post_service:0
+msgid "Service."
+msgstr "Servicio postal."
+
+#. module: ga_access_control
+#. openerp-web
+#: code:addons/ga_access_control/static/src/js/ga_ac.js:106
+#, python-format
+msgid "Share"
+msgstr "Compartir"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/model/ga_ac_vehicle.py:38
+#: code:addons/ga_access_control/model/ga_ac_vehicle.py:52
+#, python-format
+msgid "Sorry, You can only select a person for vehicle"
+msgstr "Disculpe, Puedes solo seleccionar una persona por vehiculo"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/model/ga_ac_vehicle.py:36
+#, python-format
+msgid "Sorry, You can select a person"
+msgstr "Disculpe, Puede seleccionar una persona"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/model/ga_ac_irregularity_entry.py:27
+#: code:addons/ga_access_control/model/ga_ac_irregularity_output.py:27
+#: code:addons/ga_access_control/model/ga_ac_observations_entry.py:28
+#: code:addons/ga_access_control/model/ga_ac_observations_output.py:28
+#, python-format
+msgid "Sorry, this attribute cannot be deleted for it is assigned to an user"
+msgstr "Disculpe, este registro no puede ser borrado porque esta asignado a alguien"
+
+#. module: ga_access_control
+#: code:addons/ga_access_control/model/ga_access_control.py:215
+#, python-format
+msgid "Sorry, this person is not registered"
+msgstr "Disculpe, esta persona no se encuentra registrada"
+
+#. module: ga_access_control
+#: help:ga.ac.irregularity.entry,name_irregularity_e:0
+msgid "Specifies the irregularity for Entrance."
+msgstr "Especifique la irregularidad de entrada."
+
+#. module: ga_access_control
+#: help:ga.ac.irregularity.output,name_irregularity_o:0
+msgid "Specifies the irregularity for Exit."
+msgstr "Especifique la irregularidad de salida."
+
+#. module: ga_access_control
+#: help:ga.ac.observations.entry,name_observations_e:0
+msgid "Specifies the observations for Entrance."
+msgstr "Especifique las observaciones de entrada."
+
+#. module: ga_access_control
+#: help:ga.ac.observations.output,name_observations_o:0
+msgid "Specifies the observations for Exit."
+msgstr "Especifique las observaciones de salida."
+
+#. module: ga_access_control
+#: field:ga.ac.general.attendance,init_date:0
+#: field:ga.ac.visitant.attendance,init_date:0
+msgid "Starting Date"
+msgstr "Fecha de inicio"
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+#: field:ga.ac.visitant,surname_visitant:0
+msgid "Surname"
+msgstr "Apellido(s)"
+
+#. module: ga_access_control
+#: field:ga.ac.visitant,telephone_mobile:0
+msgid "Telephone"
+msgstr "Telefono"
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.ga_kanban_view_visitant
+msgid "Telephone:"
+msgstr "Telefono:"
+
+#. module: ga_access_control
+#: sql_constraint:ga.ac.visitant:0
+msgid "The identification id number must be unique."
+msgstr "La cédula debe ser unica."
+
+#. module: ga_access_control
+#: sql_constraint:ga.ac.vehicle:0
+msgid "The license plate must be unique."
+msgstr "La placa debe ser unica."
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.view_form_ga_ac_visitant
+msgid "Tipe of Visitant"
+msgstr "Tipe of Visitant"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_type_model
+msgid "Type Model"
+msgstr "Modelo"
+
+#. module: ga_access_control
+#: field:hr.attendance,vehicle_id:0
+#: model:ir.actions.act_window,name:ga_access_control.action_form_vehicles
+msgid "Vehicle"
+msgstr "Vehiculo"
+
+#. module: ga_access_control
+#: model:ir.model,name:ga_access_control.model_ga_ac_vehicle
+msgid "Vehicle visitant"
+msgstr "Vehiculo del visitante"
+
+#. module: ga_access_control
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_vehicle
+msgid "Vehicles"
+msgstr "Vehiculo"
+
+#. module: ga_access_control
+#: field:ga.ac.vehicle,visitant_id:0
+#: view:hr.attendance:ga_access_control.view_form_hr_attendance_visitant
+#: field:hr.attendance,visitant_id:0
+#: model:ir.actions.act_window,name:ga_access_control.action_form_visitant
+#: model:ir.model,name:ga_access_control.model_ga_ac_visitant
+#: model:ir.ui.menu,name:ga_access_control.menu_ga_ac_visitant
+msgid "Visitant"
+msgstr "Visitante"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_visitant
+msgid "Visitant assistance report:"
+msgstr "Reporte de asistencia del visitante:"
+
+#. module: ga_access_control
+#: field:ga.ac.visitant.type,type:0
+#: model:ir.model,name:ga_access_control.model_ga_ac_visitant_type
+msgid "Visitant type"
+msgstr "Tipo de visitante"
+
+#. module: ga_access_control
+#: field:ga.ac.visitant,visitant_type_id:0
+msgid "Visitant type id"
+msgstr "ID del tipo de visitante"
+
+#. module: ga_access_control
+#: help:ga.ac.visitant.type,type:0
+msgid "Visitant type."
+msgstr "Tipo de Visitante."
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.ga_kanban_view_visitant
+msgid "Visitant type:"
+msgstr "Tipo de Visitante:"
+
+#. module: ga_access_control
+#: help:ga.ac.visitant,name_visitant:0
+msgid "Visitant."
+msgstr "Visitante."
+
+#. module: ga_access_control
+#: view:ga.ac.visitant:ga_access_control.ga_kanban_view_visitant
+#: view:hr.attendance:ga_access_control.hr_kanban_view_visitant
+msgid "Visitant:"
+msgstr "Visitante:"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+msgid "Visitants assistance reports"
+msgstr "Asistencias de Visitantes"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_tree_hr_attendance_visitant
+msgid "Visited hours"
+msgstr "Horas de la visita"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendanceerrors
+msgid "Worker assistance report:"
+msgstr "Reporte de asistencia del trabajador:"
+
+#. module: ga_access_control
+#: view:website:ga_access_control.report_attendance_general
+msgid "Workers assistance reports"
+msgstr "Asistencias de trabajadores"
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_form_hr_attendance_employee
+msgid "false"
+msgstr "falso"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_form_irregularity_entry
+msgid "irregularity_entry"
+msgstr "Irregularidad de entrada"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_form_irregularity_output
+msgid "irregularity_output"
+msgstr "irregularidad de salida"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_form_observations_entry
+msgid "observations_entry"
+msgstr "Observación de entrada"
+
+#. module: ga_access_control
+#: model:ir.actions.act_window,name:ga_access_control.action_form_observations_output
+msgid "observations_output"
+msgstr "Observacion de salida"
+
+#. module: ga_access_control
+#: view:ga.ac.general.attendance:ga_access_control.view_ga_ac_general_wizard
+#: view:ga.ac.visitant.attendance:ga_access_control.view_ga_attendance_visitant
+msgid "or"
+msgstr "o"
+
+#. module: ga_access_control
+#: help:ga.ac.visitant,telephone_mobile:0
+msgid "telephone mobile."
+msgstr "Celular."
+
+#. module: ga_access_control
+#: view:hr.attendance:ga_access_control.view_filter_hr_attendance_employee
+msgid "visitant"
+msgstr "Visitante"
+

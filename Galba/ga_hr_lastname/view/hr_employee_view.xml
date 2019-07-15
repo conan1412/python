@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+      <template id="custom_view" name="custom_view" inherit_id="web.assets_backend">
+  			<xpath expr="." position="inside">
+  				<link rel="stylesheet" href="/ga_hr_lastname/static/src/css/last_name.css" />
+  			</xpath>
+  		</template>
+
+      <record model='ir.ui.view' id='view_last_name_form'>
+          <field name='name'>view.last.name.form</field>
+          <field name='model'>hr.employee</field>
+          <field name='inherit_id' ref='ga_hr_employee.hr_employee_view_form'/>
+          <field name='arch' type='xml'>
+            <xpath expr="//div[@class='oe_title']" position="replace">
+              <div/>
+            </xpath>
+            <field name="image_medium" widget='image' class="oe_left oe_avatar_ga " position="replace">
+              <div class="row">
+
+                <div class="col-md-2">
+                  <div class="form-group center">
+                    <field name="image_medium" widget='image' class="oe_left oe_avatar_ga " nolabel="1"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="identification_id">Identification</label>
+                    <field name="identification_id" position="replace" required="1" nolabel="1" placeholder="Ej. 12345678"/>
+                  </div>
+
+                </div>
+                <div class="col-md-8 form-inline">
+                  <field  invisible='1' name="name" />
+                  <div class="form-group col-md-6">
+                      <label for="first_name">First Name</label>
+                      <field name="first_name" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="second_name">second name</label>
+                    <field name="second_name" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="last_name">First Last Name</label>
+                    <field name="last_name" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="second_last_name">Second Last Name</label>
+                    <field name="second_last_name" />
+                  </div>
+
+                  <div class="form-group col-md-12">
+                    <label for="category_ids">Identification</label>
+                    <field name="category_ids" widget="many2many_tags" placeholder="e.g. Part Time" groups="base.group_hr_user"/>
+                  </div>
+                </div>
+
+              </div>
+            </field>
+          </field>
+      </record>
+
+        <record model='ir.ui.view' id='view_last_name_tree'>
+            <field name='name'>view.last.name.tree</field>
+            <field name='model'>hr.employee</field>
+            <field name='inherit_id' ref='hr.view_employee_tree'/>
+            <field name='arch' type='xml'>
+                <xpath expr="//field[@name='name']" position="after">
+                    <!-- <field name="complete_name"/> -->
+                    <field name="name"/>
+                    <field name="full_first_name" invisible="1"/>
+                    <field name="full_last_name" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model='ir.ui.view' id='view_last_name_filter'>
+            <field name='name'>view.last.name.filter</field>
+            <field name='model'>hr.employee</field>
+            <field name='inherit_id' ref='hr.view_employee_filter'/>
+            <field name='arch' type='xml'>
+                <xpath expr="//field[@name='name']" position="after">
+                    <!-- <field name="complete_name"/> -->
+                    <field name="name"/>
+                    <field name="full_first_name"/>
+                    <field name="full_last_name"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- <record model='ir.ui.view' id='hr_kanban_view_employees_last_name'>
+          <field name='name'>hr.kanban.view.employees.last.name</field>
+          <field name='model'>hr.employee</field>
+          <field name='inherit_id' ref='hr.hr_kanban_view_employees'/>
+          <field name='arch' type='xml'>
+          <xpath expr="//field[@name='name']" position="replace">
+              <field name="complete_name"/>
+          </xpath>
+          </field>
+        </record> -->
+
+    </data>
+</openerp>

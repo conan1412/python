@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<openerp>
+		<data>
+			<!--Form for Search of identification_id for employee-->
+			<record id="ga_view_form_hr_accesscontrol" model="ir.ui.view" >
+				<field name="name">hr.accesscontrol form</field>
+				<field name="model">ga.access.control</field>
+				<field name="arch" type="xml">
+					<form string="Access Control" create="false" edit="false" delete="false" write = "false">
+						<sheet>
+							<group name="group_top">
+								<group name="group_left">
+									<field name='id' invisible='1'/>
+									<field name="identification_id"
+										   placeholder="Enter Employee Identification"
+										   class="oe_bt_search"
+										   string='Identification card'/>
+									<button name="search_employee"
+											type="object"
+											string="Search"
+											help="Search Identification for employee"
+											class="oe_highlight oe_bt_search" />
+									<widget type="Access_Control"></widget>
+								</group>
+								<group name="group_right">
+									<field name='people' string="People currently inside facility" readonly='1'/>
+								</group>
+							</group>
+							<notebook>
+								<page string="Lastest records" name="lastentrance">
+									<group name="group_top">
+										<group name="group_left">
+											<div class="oe_title">
+												<h2><span class="">Lastest entrance</span></h2>
+												<div style=" 
+													box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+													margin-top: 15px;
+													border-radius: ;
+													display: flex;
+													padding: 10px;"
+												>
+
+													<div style='float:left; position:relative; top:4px;' >
+														<field name="imageE" widget='image' class="oe_avatar"  readonly="1"/>
+													</div>
+													<div>
+														<ul style="list-style-type: none;">
+															<li style="height: 40px;"><b>Name:</b><field name="nameE" readonly="1" style='display:inline; '/></li>
+															<li><b>Identification:</b><field name="identificationE" style='display:inline;' readonly="1" /></li>
+															<li><b>Position:</b><field name='positionE' style='display:inline' readonly='1'/></li>
+															<li><b>Area:</b><field name='conditionE' style='display:inline' readonly='1'/></li>
+															<li><b>Extension:</b><field name='extensionE' style='display:inline' readonly='1'/></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</group>
+										<group name="group_right">
+											<div class="oe_title">
+												<h2><span class="">Lastest exit</span></h2>
+												<div style=" 
+													box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+													margin-top: 15px;
+													border-radius: ;
+													display: flex;
+													padding: 10px;"
+												>
+													<div style='float:left; position: relative; top:4px;'>
+														<field name="imageO" widget='image' class="oe_avatar" readonly="1"/>
+													</div>
+													<div>
+														<ul style="list-style-type: none;">
+															<t t-if='record.nameO.raw_value != false'>
+																<li style="height: 40px;"><b>Name:</b><field name="nameO" readonly="1" style='display:inline'/></li>
+																<li><b>Identification:</b><field name="identificationO" style='display:inline;' readonly="1" /></li>
+																<li><b>Position:</b><field name='positionO' style='display:inline' readonly='1'/></li>
+																<li><b>Area:</b><field name='conditionO' style='display:inline' readonly='1'/></li>
+															</t>
+															<t t-if='record.extensionO.raw_value != false'>
+																<li><b>Extension:</b><field name='extensionO' style='display:inline' readonly='1'/></li>
+															</t>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</group>
+									</group>
+								</page>
+							</notebook>
+						</sheet>
+					</form>
+				</field>
+			</record>
+
+			<!--List view to access of employees-->
+			<record id="view_tree_hr_attendance_employee" model="ir.ui.view">
+				<field name="name">hr.attendance Tree</field>
+				<field name="model">hr.attendance</field>
+				<field name="arch" type="xml">
+					<tree colors="green:action=='sign_out'" create="false" delete="false
+" edit = "false">
+						<field name="employee_id" />
+						<field name="date_in"/>
+						<field name='date_out'/>
+						<field name="action" />
+						<field name="vehicle_id"/>
+						<field name='irregularity_entry_id'/>
+						<field name='observations_entry_id'/>
+						<field name='irregularity_output_id'/>
+						<field name='observations_output_id'/>
+						<field name='worked_hours'/>
+					</tree>
+				</field>
+			</record>
+
+			<!--List view of visitant-->
+			<record id="view_tree_hr_attendance_visitant" model="ir.ui.view">
+				<field name="name">hr.attendance Tree visitant</field>
+				<field name="model">hr.attendance</field>
+				<field name="arch" type="xml">
+					<tree colors="green:action=='sign_out'" create="false" delete="false
+">
+						<field name="visitant_id" />
+						<field name="date_in"/>
+						<field name='date_out'/>
+						<field name="action" />
+						<field name="vehicle_id"/>
+						<field name='irregularity_entry_id'/>
+						<field name='observations_entry_id'/>
+						<field name='irregularity_output_id'/>
+						<field name='observations_output_id'/>
+						<field name='worked_hours' string='Visited hours'/>
+					</tree>
+				</field>
+			</record>
+
+			<!--Kanban view of visitant-->
+			<record model="ir.ui.view" id="hr_kanban_view_visitant">
+				<field name="name">hr.attendance Kanban visitant</field>
+				<field name="model">hr.attendance</field>
+				<field name="arch" type="xml">
+					<kanban create='false' edit='false' delete='false'>
+						<field name='action'/>
+						<field name='visitant_id'/>
+						<templates>
+							<t t-name='kanban-box'>
+								<div style=' box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+								    transition: 0.3s;
+								    padding: 2px 4px;
+								    border-radius: 7px;
+								    margin: 8px 10px;
+								    width: 200px;
+								   '>
+									<div>
+										<img t-att-src="kanban_image('ga.ac.visitant', 'image_medium', record.visitant_id.raw_value)" style="max-width:100px; width:100%; margin:auto; display: table;" />
+									</div>
+									<div style='padding:2px 6px;'>
+										<li style="height: 40px;"><b>Visitant: </b><field name="visitant_id" position="before"/></li>
+										<li><b>Identification: </b><field name='identification_visitant'/></li>
+										<li><b>Authorize: </b><field name='authorizes'/></li>
+										<li><b>Department: </b><field name='department_id' position='before'/></li>
+										<li><b>Date in: </b><field name='date_in' position='after'/></li>
+										<t t-if='record.action.raw_value != "sign_in"'>
+											<li><b>Date out: </b><field name='date_out' position='after'/></li>
+										</t>
+									</div>
+								</div>
+							</t>
+						</templates>
+					</kanban>	
+				</field>
+	    	</record>
+
+	    	<!--Kanban view of employee-->
+	    	<record model="ir.ui.view" id="hr_kanban_view_employee">
+				<field name="name">hr.attendance Kanban employee</field>
+				<field name="model">hr.attendance</field>
+				<field name="arch" type="xml">
+					<kanban create='false' edit='false' delete='false'>
+						<field name='action'/>
+						<field name='employee_id'/>
+						<templates>
+							<t t-name='kanban-box'>
+								<div style='  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+								    transition: 0.3s;
+								    padding: 2px 4px;
+								    border-radius: 7px;
+								    margin: 8px 10px;
+								    width: 200px;
+								   '>
+									<div>
+										<img t-att-src="kanban_image('hr.employee', 'image_medium', record.employee_id.raw_value)" class="oe_employee_picture" style="max-width:100px; width:100%; margin:auto; display: table;"/>
+									</div>
+									<div style='padding:2px 6px;'>
+										<li style="height: 40px;"><b>Employee: </b><field name="employee_id" position="before"/></li>
+										<li><b>Identification: </b><field name='identification_employee'/></li>
+										<li><b>Authorize: </b><field name='authorizes'/></li>
+										<li><b>Department: </b><field name='department_id' position='before'/></li>
+										<li><b>Date in: </b><field name='date_in' position='after'/></li>
+										<t t-if='record.action.raw_value != "sign_in"'>
+											<li><b>Date out: </b><field name='date_out' position='after'/></li>
+										</t>	
+									</div>
+								</div>
+							</t>
+						</templates>
+					</kanban>	
+				</field>
+	    	</record>
+			<!--Form view of visitant-->
+			<record id="view_form_hr_attendance_visitant" model="ir.ui.view">
+				<field name="name">hr.attendance form visitant</field>
+				<field name="model">hr.attendance</field>
+				<field name="arch" type="xml">
+					<form create='false' edit='false' delete='false'>
+						<header>
+						</header>
+						<sheet>
+							<group name="group_top">
+								<group name="group_left">
+									<field name="visitant_id" string='Visitant' readonly="1"/>
+									<field name="date_in" readonly="1" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="date_out" readonly="1" attrs="{'invisible': [('action','!=','sign_out')]}"/>
+									<field name="authorizes" />
+									<field name="action" readonly="1" />
+								</group>
+								<group name="group_right">
+									<field name="department_id" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="irregularity_entry_id" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="irregularity_output_id" attrs="{'invisible': [('action','!=','sign_out')]}"/>
+									<field name="observations_entry_id" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="observations_output_id" attrs="{'invisible': [('action','!=','sign_out')]}"/>
+									<field name="vehicle_id" domain="[('visitant_id','=',visitant_id)]" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name='id' invisible='1'/>
+									<widget type='Restore'></widget>
+								</group>
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+
+			<!--Form view of Employee-->
+			<record id="view_form_hr_attendance_employee" model="ir.ui.view">
+				<field name="name">hr.attendance form</field>
+				<field name="inherit_id" ref="hr_attendance.view_attendance_form"/>
+				<field name="model">hr.attendance</field>
+				<field name="arch" type="xml">
+					<xpath expr="//form" position="attributes">
+						<attribute name="create">false</attribute>
+						<attribute name="edit">false</attribute>
+						<attribute name="delete">false</attribute>
+					</xpath>
+						<xpath expr="//sheet" position="replace">
+							<group name="group_top">
+								<group name="group_left">
+									<field name="employee_id" readonly='1'/>
+									<field name="date_in" readonly="1" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="date_out" readonly="1" attrs="{'invisible': [('action','!=','sign_out')]}"/>
+									<field name="authorizes" />
+									<field name="action" readonly="1" />
+								</group>
+								<group name="group_right">
+									<field name="department_id" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="irregularity_entry_id" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="irregularity_output_id" attrs="{'invisible': [('action','!=','sign_out')]}"/>
+									<field name="observations_entry_id" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name="observations_output_id" attrs="{'invisible': [('action','!=','sign_out')]}"/>
+									<field name="vehicle_id" domain="[('employee_id','=',employee_id)]" attrs="{'invisible': [('action','!=','sign_in')]}"/>
+									<field name='id' invisible='1'/>
+									<widget type='Restore'></widget>
+								</group>
+							</group>
+						</xpath>
+				</field>
+			</record>
+
+			<!--Filters for access control-->
+			<record id="view_filter_hr_attendance_employee" model="ir.ui.view">
+			    <field name="name">hr.attendance Filter</field>
+			    <field name="model">hr.attendance</field>
+			    <field name="arch" type="xml">
+			        <search>
+			        	<field name="employee_id" filter_domain="[('employee_id','ilike',self)]" string="Name"/>
+			        	<field name="visitant_id" filter_domain="[('visitant_id','ilike',self)]" string="Name visitant"/>
+			            <filter name="employee_id" string="Employee" domain="[('employee_id','!=',None)]"/>
+			            <filter name="date_in" string="Date in"/>
+			            <filter name="date_out" string="Date out"/>
+			            <filter name="authorizes" string="Authorize" />
+			            <filter name="visitant_id" string="visitant" domain="[('visitant_id','!=',None)]" />
+			            <separator/>
+			            <filter name="action_entrances" string="Entrances" domain="[('action','=','sign_in')]"/>
+			            <filter name="action_exits" string="Exits" domain="[('action','=','sign_out')]"/>
+			        </search>
+			    </field>
+			</record>
+
+			<!--Graph view of visitant-->
+
+			<!--Graph view of employee-->
+			<record model="ir.ui.view" id="view_graph_hr_attendance_employee">
+			   <field name="name">hr.attendance graph</field>
+			   <field name="model">hr.attendance</field>
+			   <field name="arch" type="xml">
+			        <graph string="Chart of Attendance Trending" type='pivot'>
+			        	<field name='date_in' type='row' interval='day' group='1'/>
+			        	<field name='date_out' type='row' interval="day" group='1' />
+			        </graph>
+			    </field>
+			</record>
+
+			<!--Action for menu-->
+
+			<record id="action_form_principal" model='ir.actions.act_window'>
+				<field name="name">Access Control</field>
+				<field name="res_model">ga.access.control</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">form</field>
+				<field name='target'>inline</field>
+			</record>
+
+			<record id="action_tree_employee" model="ir.actions.act_window">
+				<field name="name">Access to Instalatations</field>
+				<field name="res_model">hr.attendance</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">kanban,tree</field>
+				<field name="domain">[('employee_id', '!=', None)]</field>
+           		<field name="search_view_id" ref="view_filter_hr_attendance_employee"/>
+           		<field name="context">{"search_default_action_entrances":1}</field>	
+				<field name="view_ids" eval="[(5, 0, 0), 
+        					(0, 0, {'view_mode': 'kanban', 'view_id': ref('hr_kanban_view_employee')}),
+    						(0, 0, {'view_mode': 'tree', 'view_id': ref('view_tree_hr_attendance_employee')})]"/>                           
+			</record>	
+
+			<record id="action_tree_visitant" model="ir.actions.act_window">
+				<field name="name">Access of Visitants on Instalations</field>
+				<field name="res_model">hr.attendance</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">kanban,tree</field>
+				<field name="domain">[('visitant_id', '!=', None)]</field>
+           		<field name="search_view_id" ref="view_filter_hr_attendance_employee"/>
+           		<field name="context">{"search_default_action_entrances":1}</field>
+				<field name="view_ids" eval="[(5, 0, 0), 
+        					(0, 0, {'view_mode': 'kanban', 'view_id': ref('hr_kanban_view_visitant')}),
+    						(0, 0, {'view_mode': 'tree', 'view_id': ref('view_tree_hr_attendance_visitant')})]"/>                           
+			</record>
+
+			<record id="action_chart" model='ir.actions.act_window'>
+				<field name="name">Chart trending</field>
+				<field name="res_model">hr.attendance</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">graph</field>
+				<field name='target'>current</field>
+			</record>
+
+
+			<!--Menu superior-->
+			<menuitem id="menu_access_control_one"
+					  name="Access Control"
+					  sequence="450" />
+			<!--Menu inferior-->
+			<menuitem id="menu_access_control_two"
+					  parent="menu_access_control_one"
+					  name="Access Control"
+					  action="action_form_principal"
+					  sequence="0" />
+					  
+			<menuitem id="menu_access_control_inicio"
+					  parent="menu_access_control_two"
+					  name="Access Control"
+					  action="action_form_principal"
+					  sequence="1" />
+
+			<menuitem id="menu_access_control_tree_visitant"
+					  parent="menu_access_control_two"
+					  name="Access of Employees on Instalations"
+					  action="action_tree_employee"
+					  sequence="2" />
+
+			<menuitem id="menu_access_control_tree_employee"
+					  parent="menu_access_control_two"
+					  name="Access of Visitants on Instalations"
+					  action="action_tree_visitant"
+					  sequence="3" />
+
+			<menuitem id="menu_access_control_graph"
+					  parent="menu_access_control_two"
+					  name="Chart trending"
+					  action="action_chart"
+					  sequence="6" />
+		</data>
+	</openerp>

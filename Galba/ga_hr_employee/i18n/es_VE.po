@@ -1,0 +1,1052 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ga_hr_employee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-12 19:29+0000\n"
+"PO-Revision-Date: 2016-12-12 19:29+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ga_hr_employee
+#: model:ir.module.module,shortdesc:0
+msgid "Employee Directory."
+msgstr "Directorio de empleados"
+
+#. module: ga_hr_employee
+#: model:ir.module.module,description:0
+msgid "Module used to manage employee data."
+msgstr "Modulo utilizado para gestionar datos de los empleados."
+
+#. module: ga_hr_employee
+#: model:ir.module.module,summary:0
+msgid "Module used to manage employee data."
+msgstr "Modulo utilizado para gestionar datos de los empleados."
+
+
+#. module: ga_hr_employee
+#: selection:hr.employee,pants_size:0
+msgid "26"
+msgstr "26"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,pants_size:0
+msgid "28"
+msgstr "28"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,pants_size:0
+msgid "30"
+msgstr "30"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,pants_size:0
+msgid "32"
+msgstr "32"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "34"
+msgstr "34"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+msgid "35"
+msgstr "35"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "36"
+msgstr "36"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+msgid "37"
+msgstr "37"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "38"
+msgstr "38"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+msgid "39"
+msgstr "39"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "40"
+msgstr "40"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+msgid "41"
+msgstr "41"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "42"
+msgstr "42"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+msgid "43"
+msgstr "43"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "44"
+msgstr "44"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "46"
+msgstr "46"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "48"
+msgstr "48"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,boots_size:0
+#: selection:hr.employee,pants_size:0
+msgid "50"
+msgstr "50"
+
+#. module: ga_hr_employee
+#: view:ga.hr.academic.formation:ga_hr_employee.ga_hr_academic_formation_view_tree
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Academic formation"
+msgstr "Formación académica"
+
+#. module: ga_hr_employee
+#: field:hr.employee,academic_formation_ids:0
+msgid "Academic formation of employee"
+msgstr "Formación académica"
+
+#. module: ga_hr_employee
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_academic_formation
+msgid "Academic formation of the employee"
+msgstr "Formación académica"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Aditional Information"
+msgstr "Información adicional"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Aditional information"
+msgstr "Información adicional"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,admission_date:0
+msgid "Admission date"
+msgstr "Fecha de ingreso"
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,admission_date:0
+msgid "Admission_date"
+msgstr "Fecha de ingreso"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,amount:0
+msgid "Amount"
+msgstr "Aporte"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,amount_type:0
+msgid "Amount type"
+msgstr "Tipo de importe"
+
+#. module: ga_hr_employee
+#: field:hr.employee,assigned_from:0
+msgid "Assigned from"
+msgstr "Asignado desde"
+
+#. module: ga_hr_employee
+#: field:hr.employee,assigned_to:0
+msgid "Assigned to"
+msgstr "Asignado a"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Bank account"
+msgstr "Cuenta bancaria"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,benefit_creche_family:0
+msgid "Benefit creche"
+msgstr "Guardería"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,birthday_family:0
+msgid "Birthday"
+msgstr "Fecha de nacimiento"
+
+#. module: ga_hr_employee
+#: field:hr.employee,boots_size:0
+msgid "Boots"
+msgstr "Botas"
+
+#. module: ga_hr_employee
+#: field:hr.employee,braga_size:0
+msgid "Braga"
+msgstr "Braga"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,educational_branch:0
+msgid "Branch educational"
+msgstr "Rama educativa"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Business address"
+msgstr "Dirección de oficina"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.courses,courses_id:0
+msgid "Certification name"
+msgstr "Nombre de certificación"
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,charge:0
+msgid "Charge"
+msgstr "Cargo"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Citizenship and contact information"
+msgstr "Ciudadanía e información de contacto"
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,contact_name:0
+msgid "Contact name"
+msgstr "Nombre de contacto"
+
+#. module: ga_hr_employee
+#: field:hr.employee,contributions_benefits_id:0
+msgid "Contributions and Benefits"
+msgstr "Contribuciones y beneficios"
+
+#. module: ga_hr_employee
+#: view:ga.hr.family:ga_hr_employee.ga_hr_family_wiew_form
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Contributions and benefits"
+msgstr "Contribuciones y beneficios"
+
+#. module: ga_hr_employee
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_contributions_benefits
+msgid "Contributions and benefits of the employee"
+msgstr "Contribuciones y beneficios del empleado"
+
+#. module: ga_hr_employee
+#: field:hr.employee,cost_center:0
+msgid "Cost center"
+msgstr "Centro de costo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,country_id:0
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Country of birth"
+msgstr "País de nacimiento"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Courses and workshop"
+msgstr "Cursos y talleres"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,create_uid:0
+#: field:ga.hr.contributions.benefits,create_uid:0
+#: field:ga.hr.courses,create_uid:0
+#: field:ga.hr.deductions,create_uid:0
+#: field:ga.hr.employee.courses,create_uid:0
+#: field:ga.hr.family,create_uid:0
+#: field:ga.hr.obtained.title,create_uid:0
+#: field:ga.hr.university,create_uid:0
+#: field:ga.hr.work.experience,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,create_date:0
+#: field:ga.hr.contributions.benefits,create_date:0
+#: field:ga.hr.courses,create_date:0
+#: field:ga.hr.deductions,create_date:0
+#: field:ga.hr.employee.courses,create_date:0
+#: field:ga.hr.family,create_date:0
+#: field:ga.hr.obtained.title,create_date:0
+#: field:ga.hr.university,create_date:0
+#: field:ga.hr.work.experience,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,credit:0
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: ga_hr_employee
+#: field:hr.employee,deductions_id:0
+msgid "Deductions"
+msgstr "Deducciones"
+
+#. module: ga_hr_employee
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_deductions
+msgid "Deductions of the employee"
+msgstr "Deducciones del empleado"
+
+#. module: ga_hr_employee
+#: field:hr.employee,description_activities:0
+msgid "Description activities"
+msgstr "Descripción de actividades"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Direct supervisor"
+msgstr "Supervisor directo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.contributions.benefits,assignment_disability:0
+#: field:ga.hr.family,disability_family:0
+msgid "Disability allowance"
+msgstr "Asignación por discapacidad"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Dress size"
+msgstr "Talla de vestimenta"
+
+#. module: ga_hr_employee
+#: field:ga.hr.contributions.benefits,economic_support:0
+msgid "Economic support"
+msgstr "Apoyo económico"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,education_level:0
+msgid "Education level"
+msgstr "Nivel educativo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,egress_date:0
+#: field:ga.hr.work.experience,egress_date:0
+msgid "Egress date"
+msgstr "Fecha de egreso"
+
+#. module: ga_hr_employee
+#: field:hr.employee,email:0
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,emergency_call:0
+msgid "Emergency call"
+msgstr "Llamar en caso de emergencia"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,employee_id:0
+#: field:ga.hr.contributions.benefits,employee_id:0
+#: field:ga.hr.deductions,employee_id:0
+#: field:ga.hr.employee.courses,employee_id:0
+#: field:ga.hr.work.experience,employee_id:0
+#: model:ir.model,name:ga_hr_employee.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: ga_hr_employee
+#: view:ga.hr.employee.courses:ga_hr_employee.ga_hr_employee_courses_view_tree
+#: view:ga.hr.family:ga_hr_employee.ga_hr_family_view_tree
+#: field:hr.employee,courses_ids:0
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_courses
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_employee_courses
+msgid "Employee courses"
+msgstr "Cursos"
+
+#. module: ga_hr_employee
+#: field:hr.employee,family_ids:0
+msgid "Employee families"
+msgstr "Familiares"
+
+#. module: ga_hr_employee
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_family
+msgid "Employee family"
+msgstr "Familiares"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.courses,end_date:0
+msgid "End date"
+msgstr "Fecha de culminación"
+
+#. module: ga_hr_employee
+#: field:hr.employee,extension:0
+msgid "Extension"
+msgstr "Extensión"
+
+#. module: ga_hr_employee
+#: field:hr.employee,external_years_experience:0
+msgid "External experience years"
+msgstr "Años de experiencia externa"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Families"
+msgstr "Familiares"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,employee_id:0
+msgid "Family"
+msgstr "Familiares"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Family information"
+msgstr "Información familiar"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.family,parentage:0
+msgid "Father"
+msgstr "Padre"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,gender:0
+#: selection:ga.hr.family,gender_family:0
+msgid "Feminine"
+msgstr "Femenino"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,family_name:0
+msgid "First name"
+msgstr "Primer nombre"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.deductions,amount_type:0
+msgid "Fixed"
+msgstr "Fijo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,gender_family:0
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Gender"
+msgstr "Género"
+
+#. module: ga_hr_employee
+#: view:ga.hr.family:ga_hr_employee.ga_hr_family_wiew_form
+msgid "General Information"
+msgstr "Información general"
+
+#. module: ga_hr_employee
+#: field:ga.hr.contributions.benefits,hcm:0
+#: field:ga.hr.family,hcm_family:0
+msgid "HCM"
+msgstr "HCM"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,impairment:0
+#: field:hr.employee,impairment:0
+msgid "Has disability"
+msgstr "Posee discapacidad"
+
+#. module: ga_hr_employee
+#: field:hr.employee,have_vehicle:0
+msgid "Have vehicle"
+msgstr "Posee Vehículo"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "High school"
+msgstr "Bachiller"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,id:0
+#: field:ga.hr.contributions.benefits,id:0
+#: field:ga.hr.courses,id:0
+#: field:ga.hr.deductions,id:0
+#: field:ga.hr.employee.courses,id:0
+#: field:ga.hr.family,id:0
+#: field:ga.hr.obtained.title,id:0
+#: field:ga.hr.university,id:0
+#: field:ga.hr.work.experience,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,identification_number:0
+msgid "Identification number"
+msgstr "Cédula de identidad"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Identification number"
+msgstr "Cédula de identidad"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Identification number of employee"
+msgstr "Cédula de identidad"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,impairment_type:0
+#: field:hr.employee,impairment_type:0
+msgid "Impairment type"
+msgstr "Tipo de discapacidad"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,income_tax:0
+msgid "Income tax"
+msgstr "ISRL"
+
+#. module: ga_hr_employee
+#: field:hr.employee,name_labor_union:0
+msgid "Labor union name"
+msgstr "Nombre del sindicato"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,write_uid:0
+#: field:ga.hr.contributions.benefits,write_uid:0
+#: field:ga.hr.courses,write_uid:0
+#: field:ga.hr.deductions,write_uid:0
+#: field:ga.hr.employee.courses,write_uid:0
+#: field:ga.hr.family,write_uid:0
+#: field:ga.hr.obtained.title,write_uid:0
+#: field:ga.hr.university,write_uid:0
+#: field:ga.hr.work.experience,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,write_date:0
+#: field:ga.hr.contributions.benefits,write_date:0
+#: field:ga.hr.courses,write_date:0
+#: field:ga.hr.deductions,write_date:0
+#: field:ga.hr.employee.courses,write_date:0
+#: field:ga.hr.family,write_date:0
+#: field:ga.hr.obtained.title,write_date:0
+#: field:ga.hr.university,write_date:0
+#: field:ga.hr.work.experience,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,last_name_family:0
+msgid "Last name"
+msgstr "Last name"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,last_name_family:0
+msgid "Last name"
+msgstr "Primer apellido"
+
+#. module: ga_hr_employee
+#: field:hr.employee,laterality_type:0
+msgid "Laterality type"
+msgstr "Lateralidad"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,laterality_type:0
+msgid "Left hand"
+msgstr "Zurdo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,loan:0
+msgid "Loan"
+msgstr "Préstamo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,maintenance:0
+msgid "Maintenance"
+msgstr "Manutención"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,gender:0
+#: selection:ga.hr.family,gender_family:0
+msgid "Masculine"
+msgstr "Masculino"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_tree
+msgid "Mobile"
+msgstr "Teléfono móvil"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Mobile phone"
+msgstr "Teléfono móvil"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.family,parentage:0
+msgid "Mother"
+msgstr "Madre"
+
+#. module: ga_hr_employee
+#: field:ga.hr.courses,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,name_business:0
+msgid "Name business"
+msgstr "Nombre de la empresa"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.courses,number_hours:0
+msgid "Number hours"
+msgstr "Nº de horas"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Obligatory deductions"
+msgstr "Deducciones obligatorias"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,obtained_title_id:0
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_obtained_title
+msgid "Obtained title"
+msgstr "Título obtenido"
+
+#. module: ga_hr_employee
+#: field:hr.employee,pants_size:0
+msgid "Pants"
+msgstr "Pantalón"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,parentage:0
+msgid "Parentage"
+msgstr "Parentesco"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.family,parentage:0
+msgid "Partner"
+msgstr "Cónyuge"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,phone:0
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,phone_contact:0
+msgid "Phone contact"
+msgstr "Teléfono de contacto"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Post secondary 1"
+msgstr "Técnico medio"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Post secondary 2"
+msgstr "Técnico superior"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Post secondary 3"
+msgstr "Universitario"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Post secondary 4"
+msgstr "Especialidad"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Post secondary 5"
+msgstr "Maestría"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Post secondary 6"
+msgstr "Doctorado"
+
+#. module: ga_hr_employee
+#: selection:ga.hr.academic.formation,education_level:0
+msgid "Primary school"
+msgstr "Básica"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Professional information"
+msgstr "Información profesional"
+
+#. module: ga_hr_employee
+#: field:hr.employee,job_id:0
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+#: view:hr.employee:ga_hr_employee.hr_employee_view_tree
+msgid "Professional position"
+msgstr "Cargo que ocupa"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,laterality_type:0
+msgid "Right hand"
+msgstr "Derecho"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,braga_size:0
+#: selection:hr.employee,shirt_size:0
+msgid "SS"
+msgstr "SS"
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,salary_received:0
+msgid "Salary received"
+msgstr "Salario percibido"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,saving_box:0
+msgid "Saving box"
+msgstr "Caja de ahorro"
+
+#. module: ga_hr_employee
+#: field:ga.hr.contributions.benefits,scholarship:0
+#: field:ga.hr.family,scholarship_family:0
+msgid "Scholarship"
+msgstr "Beca escolar"
+
+#. module: ga_hr_employee
+#: field:ga.hr.contributions.benefits,school_tools:0
+#: field:ga.hr.family,school_tools_family:0
+msgid "School tools"
+msgstr "Útiles escolares"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,second_last_name_family:0
+msgid "Second last name"
+msgstr "Segundo apellido"
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,second_name:0
+msgid "Second name"
+msgstr "Segundo nombre"
+
+#. module: ga_hr_employee
+#: field:hr.employee,seconded_labor_union:0
+msgid "Seconded labor union"
+msgstr "Adscrito a un sindicato"
+
+#. module: ga_hr_employee
+#: field:hr.employee,shirt_size:0
+msgid "Shirt"
+msgstr "Camisa"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.courses,site:0
+msgid "Site"
+msgstr "Lugar"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Skills and abilities..."
+msgstr "Habilidades y destrezas..."
+
+#. module: ga_hr_employee
+#: selection:ga.hr.family,parentage:0
+msgid "Son"
+msgstr "Hijo"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.courses,start_date:0
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Status"
+msgstr "Estado"
+
+#. module: ga_hr_employee
+#: field:ga.hr.deductions,syndicate:0
+msgid "Syndicate"
+msgstr "Sindicato"
+
+#. module: ga_hr_employee
+#: sql_constraint:ga.hr.family:0
+msgid "The identification number must be unique."
+msgstr "El número de indicador debe ser unico."
+
+#. module: ga_hr_employee
+#: field:ga.hr.obtained.title,name:0
+msgid "Title"
+msgstr "Título"
+
+#. module: ga_hr_employee
+#: field:ga.hr.university,name:0
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_university
+msgid "University"
+msgstr "Universidad"
+
+#. module: ga_hr_employee
+#: field:ga.hr.academic.formation,university_id:0
+#: field:ga.hr.employee.courses,university_id:0
+msgid "University name"
+msgstr "Instituto o universidad"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Voluntary deductions"
+msgstr "Deducciones voluntarias"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee,work_email:0
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "Work email"
+msgstr "Correo de trabajo"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+#: field:hr.employee,work_experience_ids:0
+msgid "Work experience"
+msgstr "Experiencia laboral"
+
+#. module: ga_hr_employee
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_work_experience
+msgid "Work experience of the employee"
+msgstr "Experiencia laboral del empleado"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,braga_size:0
+#: selection:hr.employee,shirt_size:0
+msgid "XL"
+msgstr "XL"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,braga_size:0
+#: selection:hr.employee,shirt_size:0
+msgid "XXL"
+msgstr "XXL"
+
+#. module: ga_hr_employee
+#: selection:hr.employee,braga_size:0
+#: selection:hr.employee,shirt_size:0
+msgid "XXXL"
+msgstr "XXXL"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "You must create the user used by the employee to enter the system."
+msgstr "Debe crear el usuario utilizado por el empleado para ingresar al sistema."
+
+#. module: ga_hr_employee
+#: help:hr.employee,extension:0
+msgid "You must enter only numeric characters."
+msgstr "Debe ingresar sólo caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:hr.employee,amount:0
+msgid "You must enter the amount or percentage as appropriate with the type of amount selected, using only numeric characters."
+msgstr "Debe ingresar el monto o porcentaje según corresponda con el tipo de importe seleccionado, utilizando sólo caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:ga.hr.employee.courses,site:0
+msgid "You must enter the city or state where the employee did the course or workshop."
+msgstr "Debe ingresar la ciudad o estado donde el empleado realizó el curso o taller."
+
+#. module: ga_hr_employee
+#: help:hr.employee,email:0
+msgid "You must enter the employee's personal email."
+msgstr "Debe ingresar el correo electrónico personal del empleado."
+
+#. module: ga_hr_employee
+#: help:ga.hr.family,identification_number:0
+msgid "You must enter the family ID number. If you do not have an ID number enter the number 0. You only have to enter numeric characters."
+msgstr "Debe ingresar el número de cédula del familiar. Si no posee cédula de identidad ingresar el número 0. Sólo debe ingresar caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:ga.hr.work.experience,salary_received:0
+msgid "You must enter the last salary received by the employee in the company."
+msgstr "Debe ingresar el último salario percibido por el empleado en la empresa."
+
+#. module: ga_hr_employee
+#: help:hr.employee,assigned_from:0
+msgid "You must enter the name of the company from which this employee comes."
+msgstr "Debe ingresar el nombre de la empresa de la cual procede este empleado."
+
+#. module: ga_hr_employee
+#: help:ga.hr.work.experience,name_business:0
+msgid "You must enter the name of the company in which the employee worked."
+msgstr "Debe ingresar el nombre de la empresa en la que laboró el empleado."
+
+#. module: ga_hr_employee
+#: help:hr.employee,assigned_to:0
+msgid "You must enter the name of the company to which this employee was assigned."
+msgstr "Debe ingresar el nombre de la empresa a la cual fue asignado este empleado."
+
+#. module: ga_hr_employee
+#: help:ga.hr.work.experience,contact_name:0
+msgid "You must enter the name of the reference person to whom you can contact to confirm the information recorded."
+msgstr "Debe ingresar el nombre de la persona de referencia a la que se puede contactar para confirmar la información registrada."
+
+#. module: ga_hr_employee
+#: help:hr.employee,income_tax:0
+msgid "You must enter the percentage defined by the employee to be deducted from your salary by concept of the  Income Tax. Apply under the instructions specified by the Tax Administration. It is a percentage field so you should only enter numeric characters."
+msgstr "Debe ingresar el porcentaje deducido del salario del empleado por concepto de Impuesto Sobre La Renta. Aplica bajo las instrucciones especificadas por la Administración Tributaria. Es un campo porcentual por lo tanto sólo debe ingresar caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:hr.employee,credit:0
+msgid "You must enter the percentage defined by the employee to be deducted from your salary by concept of the saving box credit. You must only enter numeric characters."
+msgstr "Debe ingresar el porcentaje definido por el empleado para ser deducido de su salario por concepto de crédito de la caja de ahorro. Es un campo porcentual por lo tanto sólo debe ingresar caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:hr.employee,loan:0
+msgid "You must enter the percentage defined by the employee to be deducted from your salary by concept of the saving box loan. You must only enter numeric characters."
+msgstr "Debe ingresar el porcentaje definido por el empleado para ser deducido de su salario por concepto de préstamo de la caja de ahorro. Es un campo porcentual por lo tanto sólo debe ingresar caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:hr.employee,saving_box:0
+msgid "You must enter the percentage defined by the employee to be deducted from your salary by concept of the saving box. You must only enter numeric characters."
+msgstr "Debe ingresar el porcentaje definido por el empleado para ser deducido de su salario por concepto de caja de ahorro. Es un campo porcentual por lo tanto sólo debe ingresar caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:hr.employee,syndicate:0
+msgid "You must enter the percentage defined by the employee to be deducted from your salary by concept of the syndicate. You must only enter numeric characters."
+msgstr "Debe ingresar el porcentaje definido por el empleado para ser deducido de su salario por concepto de cuota sindical. Es un campo porcentual por lo tanto sólo debe ingresar caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:ga.hr.family,phone:0
+msgid "You must enter the phone number of the family member by entering only numeric characters."
+msgstr "Debe ingresar el número de teléfono del familiar ingresando sólo caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:ga.hr.work.experience,phone_contact:0
+msgid "You must enter the telephone number of the reference person you can contact to confirm the information recorded. You must enter only numeric characters."
+msgstr "Debe ingresar el número telefónico de la persona de referencia a la que se puede contactar para confirmar la información registrada. Debe ingresar sólo caracteres numéricos."
+
+#. module: ga_hr_employee
+#: help:ga.hr.work.experience,charge:0
+msgid "You must enter the work position of the employee."
+msgstr "Debe ingresar el cargo que desempeñó el empleado."
+
+#. module: ga_hr_employee
+#: help:hr.employee,assignment_disability:0
+#: help:hr.employee,economic_support:0
+#: help:hr.employee,hcm:0
+#: help:hr.employee,scholarship:0
+#: help:hr.employee,school_tools:0
+msgid "You must select this field if the employee applies for this benefit and has also entered the necessary requirements."
+msgstr "Debe seleccionar este campo si el empleado aplica para este beneficio y además haya consignado los requisitos necesarios."
+
+#. module: ga_hr_employee
+#: help:hr.employee,maintenance:0
+msgid "You must select this field if the employee applies to comply with this obligation."
+msgstr "Debe seleccionar este campo si el empleado aplica para cumplir con esta obligación."
+
+#. module: ga_hr_employee
+#: help:ga.hr.family,benefit_creche_family:0
+#: help:ga.hr.family,disability_family:0
+#: help:ga.hr.family,hcm_family:0
+#: help:ga.hr.family,scholarship_family:0
+#: help:ga.hr.family,school_tools_family:0
+msgid "You must select this field if the familiar applies for this benefit and the employee has also consign the necessary requirements."
+msgstr "Debe seleccionar este campo si el familiar aplica para este beneficio y además el empleado haya consignado los requisitos necesarios."
+
+#. module: ga_hr_employee
+#: field:hr.employee,years_service:0
+msgid "Service years"
+msgstr "Años de servicio"
+
+#. module: ga_hr_employee
+#: help:hr.employee,years_service:0
+msgid "This field is automatically loaded by recording the date of entry pertaining to the employee's contract."
+msgstr "Este campo se carga automáticamente al registrar la fecha de ingreso perteneciente al contrato del empleado."
+
+#. module: ga_hr_employee
+#: field:ga.hr.family,age:0
+msgid "Age"
+msgstr "Edad"
+
+#. module: ga_hr_employee
+#: help:ga.hr.family,age:0
+msgid "This field is automatically loaded when registering the familiar's birth date."
+msgstr "Este campo se carga automáticamente al registrar la fecha de nacimiento del familiar."
+
+#. module: ga_hr_employee
+#: field:ga.hr.work.experience,years:0
+msgid "Years"
+msgstr "Años"
+
+#. module: ga_hr_employee
+#: help:ga.hr.work.experience,years:0
+msgid "This field is automatically loaded when registering the date of entry and the date of departure to the company."
+msgstr "Este campo se carga automáticamente al registrar la fecha de ingreso y la fecha de egreso a la empresa."
+
+#. module: ga_hr_employee
+#: field:hr.employee,bank_account_id:0
+msgid "Bank account"
+msgstr "Cuenta bancaria"
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "You must create the user used by the employee to enter the system."
+msgstr "Debe crear el usuario utilizado por el empleado para ingresar al sistema."
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "You must create the user used by the employee to enter the system."
+msgstr "Debe crear el usuario utilizado por el empleado para ingresar al sistema."
+
+#. module: ga_hr_employee
+#: view:hr.employee:ga_hr_employee.hr_employee_view_form
+msgid "HR"
+msgstr "RRHH"
+
+#. module: ga_hr_employee
+#: field:hr.employee,employee_type_id:0
+#: model:ir.model,name:ga_hr_employee.model_ga_hr_employee_type
+msgid "Employee type"
+msgstr "Tipo de empleado"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ga_hr_employee
+#: field:ga.hr.employee.type,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: hr
+#: model:ir.ui.menu,name:hr.menu_hr_main
+#: model:ir.ui.menu,name:hr.menu_hr_reporting
+#: model:ir.ui.menu,name:hr.menu_hr_root
+#: model:ir.ui.menu,name:hr.menu_human_resources_configuration
+msgid "Human Resources"
+msgstr "Talento Humano"
+
+#. module: ga_hr_employee
+#: field:hr.employee,age:0
+msgid "Age"
+msgstr "Edad"
+
+#. module: hr
+#: field:hr.employee,identification_id:0
+msgid "Identification No"
+msgstr "Cédula de identidad"
+
+#. module: ga_hr_employee
+#: model:ir.actions.act_window,name:ga_hr_employee.ga_hr_employee_type_action
+#: model:ir.ui.menu,name:ga_hr_employee.ga_hr_employee_type_menu
+msgid "Employee types"
+msgstr "Tipos de empleados"
+
+#. module: ga_hr_employee
+#: sql_constraint:hr.employee:0
+msgid "The identificationid number must be unique."
+msgstr "El número de cédula de identidad debe ser único."

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_hr_attendance_error" model="ir.ui.view">
+            <field name="name">Attendance Report Error</field>
+            <field name="model">hr.attendance.error</field>
+            <field name="inherit_id" ref='hr_attendance.view_hr_attendance_error'/>
+            <field name="arch" type="xml">
+                <field name="max_delay"  position="attributes">
+                        <attribute name="invisible">1</attribute>
+                </field>
+                <xpath expr="//label[@string='Bellow this delay, the error is considered to be voluntary']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

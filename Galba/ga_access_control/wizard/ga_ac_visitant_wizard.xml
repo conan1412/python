@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_ga_attendance_visitant" model="ir.ui.view">
+            <field name="name">Attendance Visitant Report</field>
+            <field name="model">ga.ac.visitant.attendance</field>
+            <field name="arch" type="xml">
+            <form string="Print Attendance Visitant Report">
+                <group string="Analysis Information" col="4">
+                    <field name="init_date"/>
+                    <field name="end_date"/>
+                </group>
+                <footer>
+                    <button name="print_reports" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+            </field>
+        </record>
+
+        <record id="action_ga_attendance_visitant" model="ir.actions.act_window">
+            <field name="name">Attendance Visitant Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ga.ac.visitant.attendance</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_ga_attendance_visitant"/>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.values" id="ga_attendance_visitant_values">
+            <field name="model_id" ref="ga_access_control.model_ga_ac_visitant" />
+            <field name="name">Attendance Visitant Report</field>
+            <field name="key2">client_print_multi</field>
+            <field name='key'>action</field>
+            <field name="value" eval="'ir.actions.act_window,' + str(ref('action_ga_attendance_visitant'))"/>
+            <field name="model">ga.ac.visitant</field>
+        </record>
+    </data>
+</openerp>

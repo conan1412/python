@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/ga_access_control/static/src/js/ga_ac.js"></script>
+  				<link rel="stylesheet" href="/ga_access_control/static/src/css/ga_ac.css" />
+            </xpath>
+        </template>
+
+         <template id="minimal_layout_inherit" inherit_id="report.minimal_layout">
+		      <xpath expr="//head" position="inside">
+		             <link rel='stylesheet' href="/ga_access_control/static/src/css/ga_ac.css"/>
+		      </xpath>
+		</template>
+    </data>
+</openerp>

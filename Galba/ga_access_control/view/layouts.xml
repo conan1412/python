@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+  <openerp>
+    <data>
+      <template id="ac_layout" >
+        <t t-call="ga_access_control.ac_layout_header" />
+        <t t-raw="0" />
+        <t t-call="ga_access_control.ac_layout_footer" />
+      </template>
+
+      <template id="ac_layout_header">
+        <div class="header">
+          <div class="row">
+            <div style="border-bottom: 1.5px solid rgb(126,0,33)" class="col-md-12">
+                <img style=" max-width: 100%; height: auto; width: auto/9; float:right;/* Bug de ie8 */" src="/ga_access_control/static/src/img/guardian_alba-logo.png" />
+                <img style=" max-width: 100%; height: auto; width: auto/9; float:left;/* Bug de ie8 */" src="/ga_access_control/static/src/img/pdvsa_industrial-logo.png" />
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <template id="ac_layout_footer">
+        <div class="footer">
+          <div>
+                <br/>
+                <p style='font-size:12px;'>(*)This information is the property of <b><t t-if="o and 'company_id' in o">
+                                      <t t-set="company" t-value="o.company_id"></t>
+                                      <t t-esc="company.name"/>
+                                  </t>
+                                  <t t-if="not o or not 'company_id' in o">
+                                      <t t-set="company" t-value="res_company"></t>
+                                      <t t-esc="company.name"/>
+                                  </t></b>, its distribution to agents outside the company is prohibited.</p>
+                <span style="display:block; float:right;" t-esc="context_timestamp(datetime.datetime.now()).strftime('%H:%M %d-%m-%Y')"/>
+          </div>
+          <div class="text-center" style="border-top: 0.5px solid rgb(126,0,33);">
+            <ul class="list-inline">
+                <li>Page:</li>
+                <li><span class="page"/></li>
+                <li>/</li>
+                <li><span class="topage"/></li>
+            </ul>
+          </div>
+        </div>
+      </template>
+  </data>
+</openerp>
+

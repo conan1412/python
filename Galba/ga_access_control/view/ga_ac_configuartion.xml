@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<openerp>
+		<data>
+			<!--Acciones -->
+				<!--Irregularidades entrada-->
+			<act_window id="action_form_irregularity_entry"
+						name="irregularity_entry" 
+						res_model="ga.ac.irregularity.entry" 
+						view_mode="tree,form" />
+				<!--Irregularidades salida-->
+			<act_window id="action_form_irregularity_output"
+						name="irregularity_output" 
+						res_model="ga.ac.irregularity.output" 
+						view_mode="tree,form" />
+				<!--Observaciones de entrada-->
+			<act_window id="action_form_observations_entry"
+						name="observations_entry" 
+						res_model="ga.ac.observations.entry" 
+						view_mode="tree,form" />
+				<!--Observaciones de salida-->
+			<act_window id="action_form_observations_output"
+						name="observations_output"
+						res_model="ga.ac.observations.output" 
+						view_mode="tree,form" />
+			<!--Fin de Acciones -->
+			<!--Listas -->
+				<!--Irregularidades de entrada -->
+			<record id="view_tree_ga_ac_irregularity_entry" model="ir.ui.view">
+				<field name="name">ga.ac.irregularity.entry Tree</field>
+				<field name="model">ga.ac.irregularity.entry</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name_irregularity_e"/>
+					</tree>
+				</field>
+			</record>
+				<!--Irregularidades de salida -->
+			<record id="view_tree_ga_ac_irregularity_output" model="ir.ui.view">
+				<field name="name">ga.ac.irregularity.output Tree</field>
+				<field name="model">ga.ac.irregularity.output</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name_irregularity_o"/>
+					</tree>
+				</field>
+			</record>
+				<!--Observaciones de entrada -->
+			<record id="view_tree_ga_ac_observations_entry" model="ir.ui.view">
+				<field name="name">ga.ac.observations.entry Tree</field>
+				<field name="model">ga.ac.observations.entry</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name_observations_e"/>
+					</tree>
+				</field>
+			</record>
+				<!--Observaciones de salida -->
+			<record id="view_tree_ga_ac_observations_output" model="ir.ui.view">
+				<field name="name">ga.ac.observations.output Tree</field>
+				<field name="model">ga.ac.observations.output</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name_observations_o"/>
+					</tree>
+				</field>
+			</record>
+			<!--Fin de Listas -->
+			<!--Formularios -->
+				<!--Iirregularidades de entrada-->
+			<record id="view_form_ga_ac_irregularity_entry" model="ir.ui.view">
+				<field name="name">ga.ac.irregularity.entry form</field>
+				<field name="model">ga.ac.irregularity.entry</field>
+				<field name="arch" type="xml">
+					<form>
+						<header>
+						</header>
+						<sheet> 
+							<group name="group_top">
+								<group name="group_left">
+									<field name="name_irregularity_e" />
+								</group>
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+				<!--Irregularidades de salida-->
+			<record id="view_form_ga_ac_irregularity_output" model="ir.ui.view">
+				<field name="name">ga.ac.irregularity.output form</field>
+				<field name="model">ga.ac.irregularity.output</field>
+				<field name="arch" type="xml">
+					<form>
+						<header>
+						</header>
+						<sheet> 
+							<group name="group_top">
+								<group name="group_left">
+									<field name="name_irregularity_o" />
+								</group>
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+				<!--Observaciones de entrada-->
+			<record id="view_form_ga_ac_observations_entry" model="ir.ui.view">
+				<field name="name">ga.ac.observations.entry form</field>
+				<field name="model">ga.ac.observations.entry</field>
+				<field name="arch" type="xml">
+					<form>
+						<header>
+						</header>
+						<sheet> 
+							<group name="group_top">
+								<group name="group_left">
+									<field name="name_observations_e" />
+								</group>
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+				<!--Observaciones de salida -->
+			<record id="view_form_ga_ac_observations_output" model="ir.ui.view">
+				<field name="name">ga.ac.observations.output form</field>
+				<field name="model">ga.ac.observations.output</field>
+				<field name="arch" type="xml">
+					<form>
+						<header>
+						</header>
+						<sheet> 
+							<group name="group_top">
+								<group name="group_left">
+									<field name="name_observations_o" />
+								</group>
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+			<!--Fin de Formularios -->
+			<!--Menu -->
+				<!--Superior-->
+			<menuitem id="menu_ga_ac_configuration"
+					name="Access Control" 
+					parent="base.menu_config" />
+
+				<!--Inferior-->
+				<!--Irregularidades de entrada-->
+			<menuitem id="menu_ga_ac_irregularity_entry"
+					parent="menu_ga_ac_configuration"
+					name="Irregularity of entrance"
+					action="action_form_irregularity_entry"
+					sequence="1" />
+				<!--Irregularidades de salida-->
+			<menuitem id="menu_ga_ac_irregularity_output"
+					parent="menu_ga_ac_configuration"
+					name="Irregularity of exit"
+					action="action_form_irregularity_output"
+					sequence="2" />
+				<!--Observaciones de entrada-->
+			<menuitem id="menu_ga_ac_observations_entry"
+					parent="menu_ga_ac_configuration"
+					name="Observations of entrance"
+					action="action_form_observations_entry"
+					sequence="3" />
+				<!--Observaciones de salida-->
+			<menuitem id="menu_ga_ac_observations_output"
+					parent="menu_ga_ac_configuration"
+					name="Observations of exit"
+					action="action_form_observations_output"
+					sequence="4" />
+			<!--Fin de Menu -->
+		</data>
+	</openerp>

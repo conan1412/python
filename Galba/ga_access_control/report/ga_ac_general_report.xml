@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<template id="report_attendance_general">
+			<t t-call="report.html_container">
+				<t t-call="ga_access_control.ac_layout">
+					<div class="page">
+					<style type='text/css'>
+	                    .galba_table table,.galba_table th,.galba_table td {
+	                        border: 0.5px solid rgb(126,0,33);
+	                    }
+	                    .galba_table table {
+	                        border-collapse: collapse;
+	                        width: 100%;
+	                    }
+
+	                    .gaba_table th{
+	                        text-align: center;
+	                        padding: 8px;
+	                    }
+
+	                    .galba_table td {
+	                        text-align: justify;
+	                        padding: 8px;
+	                    }
+
+	                    .galba_table tr:nth-child(even){background-color: #C7C6C6}
+
+	                    .galba_table th,.galba_table .average td {
+	                        background-color: rgb(197,0,11);
+	                        color: white;
+	                    }
+	                </style>
+				    <t t-set="register_employees" t-value="lst(data['form']['emp_ids'],data['form']['init_date'], data['form']['end_date'])" />
+				    <t t-if = "register_employees != 'sorry'">
+							<div class="oe_structure"/>
+							<h2>Workers assistance reports</h2>
+							<table class="galba_table table table-condensed">
+							    <thead>
+							        <tr class='galba_table'>
+							        	<th class='galba_table'>N°</th>
+							        	<th class='galba_table'>Identification</th>
+							            <th class='galba_table'>Operation</th>
+							            <th class='galba_table'>Area</th>
+							            <th class='galba_table'>Authorize</th>
+							            <th class='galba_table'>Date Sign</th>
+							            <th class='galba_table'>Date Out</th>
+							            <th class='galba_table'>Observations entry</th>
+							            <th class='galba_table'>Observations exit</th>
+							            <th class='galba_table'>Irregularity entry</th>
+							            <th class='galba_table'>Irregularity exit</th>
+							            <th class='galba_table'>Delay</th>
+							        </tr>
+							    </thead>
+						    	<t t-set="number" t-value="0" />
+							    <tbody>
+							        <tr t-foreach="register_employees" t-as="att" >
+							        	<td class='galba_table' t-set="number" t-value="number + 1" />
+							        	<td class='galba_table'><span t-esc="number"/></td>
+							            <td class='galba_table'><span t-esc="att['identification_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['action']"/></td>
+							            <td class='galba_table'><span t-esc="att['department_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['authorizes']"/></td>
+							            <td class='galba_table'><span t-esc="att['date_in']"/></td>
+							            <td class='galba_table'><span t-esc="att['date_out']"/></td>
+							            <td class='galba_table'><span t-esc="att['observations_entry_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['observations_output_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['irregularity_entry_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['irregularity_output_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['delay']"/></td>
+							        </tr>
+							        <tr class="average" t-foreach="total(data['form']['emp_ids'],data['form']['init_date'], data['form']['end_date'])" t-as="total">
+                                        <td colspan="5"><strong>Average</strong></td>
+                                        <td ><stronng t-esc="total['average_in']"/></td>
+                                        <td colspan="5"><stronng t-esc="total['average_out']"/></td>
+                                        <td ><strong t-esc="total['total_average']"/></td>
+                                    </tr>
+								</tbody>	
+							</table>	
+				    </t>
+				    <br/>
+				    <t t-set="register_visitants" t-value="lst2(data['form']['visit_ids'],data['form']['init_date'], data['form']['end_date'])"/>
+				    <t t-if="register_visitants != 'sorry'">
+							<h2>Visitants assistance reports</h2>
+							<table class="galba_table table table-condensed">
+							    <thead>
+							        <tr class='galba_table'>
+							        	<th class='galba_table'>N°</th>
+							        	<th class='galba_table'>Identification</th>
+							            <th class='galba_table'>Operation</th>
+							            <th class='galba_table'>Area</th>
+							            <th class='galba_table'>Authorize</th>
+							            <th class='galba_table'>Date Sign</th>
+							            <th class='galba_table'>Date Out</th>
+							            <th class='galba_table'>Observations entry</th>
+							            <th class='galba_table'>Observations exit</th>
+							            <th class='galba_table'>Irregularity entry</th>
+							            <th class='galba_table'>Irregularity exit</th>
+							            <th class='galba_table'>Delay</th>
+							        </tr>
+							    </thead>
+						    	<t t-set="number" t-value="0" />
+							    <tbody>
+							        <tr class='galba_table' t-foreach="register_visitants" t-as="att" >
+							        	<td class='galba_table' t-set="number" t-value="number + 1" />
+							        	<td class='galba_table'><span t-esc="number"/></td>
+							            <td class='galba_table'><span t-esc="att['identification_number']"/></td>
+							            <td class='galba_table'><span t-esc="att['action']"/></td>
+							            <td class='galba_table'><span t-esc="att['department_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['authorizes']"/></td>
+							            <td class='galba_table'><span t-esc="att['date_in']"/></td>
+							            <td class='galba_table'><span t-esc="att['date_out']"/></td>
+							            <td class='galba_table'><span t-esc="att['observations_entry_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['observations_output_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['irregularity_entry_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['irregularity_output_id']"/></td>
+							            <td class='galba_table'><span t-esc="att['delay']"/></td>
+							        </tr>
+							        <tr class="average" t-foreach="total2(data['form']['visit_ids'],data['form']['init_date'], data['form']['end_date'])" t-as="total">
+                                        <td colspan="5"><strong>Average</strong></td>
+                                        <td ><stronng t-esc="total['average_in']"/></td>
+                                        <td colspan="5"><stronng t-esc="total['average_out']"/></td>
+                                        <td ><strong t-esc="total['total_average']"/></td>
+                                    </tr>
+							    </tbody>
+							</table>
+				    	</t>
+					</div> 	
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>

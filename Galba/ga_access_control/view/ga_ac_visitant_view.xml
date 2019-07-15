@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<openerp>
+		<data>
+			<!--Action for menu-->
+			
+			<!--List for register access of employees-->
+			<record id="view_tree_ga_ac_visitant" model="ir.ui.view">
+				<field name="name">ga.ac.visitant Tree</field>
+				<field name="model">ga.ac.visitant</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name='full_name' />
+						<field name="identification_number"/>
+						<field name="telephone_mobile"/>
+						<field name='visitant_type_id'/>
+					</tree>
+				</field>
+			</record>
+
+			<record model="ir.ui.view" id="ga_kanban_view_visitant">
+				<field name="name">ga.ac.visitant Kanban visitant</field>
+				<field name="model">ga.ac.visitant</field>
+				<field name="arch" type="xml">
+					<kanban>
+						<templates>
+							<t t-name='kanban-box'>
+								<div  style=' box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+								    transition: 0.3s;
+								    padding: 2px 4px;
+								    border-radius: 7px;
+								    margin: 8px 10px;
+								    width: 200px;
+								   '>
+									<div>
+										<a type='open'><img t-att-src="kanban_image('ga.ac.visitant', 'image_medium', record.id.value)" style="max-width:100px; width:100%; margin:auto; display: table;" /></a>
+									</div>
+									<div style='padding:2px 16px;'>
+										<li style="height: 40px;"><b>Visitant: </b><a type='open'><field name="full_name" position="before"/></a></li>
+										<li><b>Identification: </b><field name='identification_number' position='after'/></li>
+										<li style="height: 35px;"><b>Visitant type: </b><field name='visitant_type_id' position='before'/></li>
+										<li><b>Telephone: </b><field name='telephone_mobile' position='before'/></li>
+									</div>
+								</div>
+							</t>
+						</templates>
+					</kanban>	
+				</field>
+	    	</record>
+
+			<record id="view_form_ga_ac_visitant" model="ir.ui.view">
+				<field name="name">ga.ac.visitant form</field>
+				<field name="model">ga.ac.visitant</field>
+				<field name="arch" type="xml">
+					<form>
+						<header>
+						</header>
+						<sheet> 
+							<field name="image_medium" widget='image' style="margin-right:40px;" class="oe_left oe_avatar"/>
+							<div id="Identification" class="oe_title" style="position:absolute; top:130px;">
+								<label for='identification_number' string='Identification N°' />
+								<field name="identification_number" placeholder="Ej. 12345678" nolabel='1'/>
+							</div>
+							<div class="" style="display: flex;">
+								<div name="group_left" style="">
+									<label for='name_visitant' string="Name" />
+									<field name="name_visitant" nolabel='1'/>
+									<label for='surname_visitant' string='Surname'/>
+									<field nolabel='1' name="surname_visitant"/>
+								</div>
+								<div name='group_right' style="margin-left: 20px;">
+									<label for='country_id' string='Country' />
+									<field nolabel='1' name="country_id"/>
+									<label for='visitant_type_id' string='Tipe of Visitant' />
+									<field nolabel='1' name="visitant_type_id"/>
+									<label for='telephone_mobile' string='Mobile'  />
+									<field nolabel='1' name="telephone_mobile"/>
+									<field name='full_name' readonly='1' invisible='1'/>
+								</div>	
+							</div>						
+						</sheet>
+					</form>
+				</field>
+			</record>
+
+			<record id="view_filter_ga_visitant" model="ir.ui.view">
+			    <field name="name">ga.ac.visitant Filter</field>
+			    <field name="model">ga.ac.visitant</field>
+			    <field name="arch" type="xml">
+			        <search>
+			        	<field name="name_visitant" filter_domain="['|',('name_visitant','ilike',self),('surname_visitant','ilike',self)]" string="Name"/>
+			        </search>
+			    </field>
+			</record>
+
+			<record id="action_form_visitant" model="ir.actions.act_window">
+				<field name="name">Visitant</field>
+				<field name="res_model">ga.ac.visitant</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">kanban,tree,form</field>
+           		<field name="search_view_id" ref="view_filter_ga_visitant"/>
+				<field name="view_ids" eval="[(5, 0, 0), 
+					(0, 0, {'view_mode': 'kanban', 'view_id': ref('ga_kanban_view_visitant')}),
+					(0, 0, {'view_mode': 'form', 'view_id': ref('view_form_ga_ac_visitant')}),
+					(0, 0, {'view_mode': 'tree', 'view_id': ref('view_tree_ga_ac_visitant')})]"/>                           
+			</record>
+
+			<!--Menu inferior-->
+			<menuitem id="menu_ga_ac_visitant" 
+					  parent="menu_access_control_two" 
+					  name="Visitant" 
+					  action="action_form_visitant" 
+					  sequence="4" />
+		</data>
+	</openerp>
