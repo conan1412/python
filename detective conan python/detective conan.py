@@ -8,7 +8,7 @@ def find_number(string):
 			if cont == 0:
 				list.append(i)
 				cont += 1
-			if i+1 < len(string) and ((string[i+1].isdigit()==False and string[i+1].isalpha()==False) or string[i+1].isalpha()):
+			if i+1 < len(string) and string[i+1].isdigit()==False:
 				list.append(i+1)
 				break
 				
